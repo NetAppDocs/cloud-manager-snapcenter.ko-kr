@@ -1,0 +1,206 @@
+---
+sidebar: sidebar 
+permalink: reference-prerequisites-azure-connector-snapcenter-service.html 
+keywords: connector, prerequisites, firewall, network requirements, subnet, VNet, network security group, connectivity 
+summary: 커넥터를 생성하고 SnapCenter 서비스를 활성화하기 전에 사전 요구 사항을 충족하는지 확인하십시오. 
+---
+= 커넥터를 생성하고 SnapCenter 서비스를 활성화하기 위한 필수 구성 요소입니다
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Azure에서 커넥터를 생성하고 SnapCenter 서비스를 활성화하기 전에 특정 사항을 확인해야 합니다.
+
+* Connector에 대해 선택한 서브넷이 Azure Kubernetes Service(AKS)에 예약된 다음 IP 주소 범위와 겹치지 않아야 합니다. 169.254.0.0/16, 172.30.0.0/16, 172.31.0.0/16 및 192.0.2.0/24.
+* 선택한 서브넷에서 실행 중인 AKS가 없는지 확인합니다.
+* 선택한 서브넷이 해당 포트의 SAP HANA 시스템에 액세스할 수 있는지 확인합니다.
+* 선택한 서브넷의 VNET가 SAP HANA 시스템의 VNET와 다른 경우 VNets가 VPN 게이트웨이, 피어링 또는 기타 수단을 통해 서로 통신할 수 있는지 확인합니다.
+* 방화벽 뒤에서 SnapCenter 서비스를 활성화하려면 에 설명된 작업을 수행해야 합니다 <<Network requirements>>.
++
+SnapCenter 서비스를 방화벽 뒤에서 활성화할지 여부를 먼저 결정해야 합니다. SnapCenter 서비스를 활성화한 후에는 방화벽 뒤에서 실행되도록 구성할 수 없습니다. 이는 AKS의 제한 사항입니다.
+
+
+
+
+
+== 네트워크 요구 사항
+
+Connector가 클라우드 환경 내의 리소스 및 프로세스를 관리할 수 있도록 네트워크를 설정합니다.
+
+
+
+=== 방화벽 구성
+
+방화벽 뒤에서 SnapCenter 서비스를 활성화하려면 다음 작업을 수행해야 합니다.
+
+
+NOTE: Azure 방화벽을 사용하는 경우 스크립트를 사용하여 다음 단계를 수행할 수 있습니다. 자세한 내용은 을 참조하십시오 <<Azure Firewall configuration>>.
+
+* 단계 *
+
+. 아래 네트워크 규칙을 방화벽에 추가합니다.
++
+[cols="4*"]
+|===
+| 대상 끝점 | 프로토콜 | 포트 | 설명 
+
+
+| https://docs.microsoft.com/en-us/azure/virtual-network/service-tags-overview#available-service-tags["서비스 태그"^] -AzureCloud.<Region>:1194 | UDP입니다 | 1194 | 전용 커넥터 및 전용 SnapCenter 서비스 클러스터를 사용하려는 경우에는 필요하지 않습니다. 
+
+
+| https://docs.microsoft.com/en-us/azure/virtual-network/service-tags-overview#available-service-tags["서비스 태그"^] -AzureCloud.<Region>:9000 | TCP | 9000입니다 | 전용 커넥터 및 전용 SnapCenter 서비스 클러스터를 사용하려는 경우에는 필요하지 않습니다. 
+
+
+| FQDN-ntp.ubuntu.com:123 을 참조하십시오 | UDP입니다 | 123을 선택합니다 | Azure 가상 머신의 시간 동기화에 필요합니다. 
+
+
+| https://docs.microsoft.com/en-us/azure/virtual-network/service-tags-overview#available-service-tags["서비스 태그"^] -AzureCloud.<Region>:443 | TCP | 443 | 전용 커넥터 및 전용 SnapCenter 서비스 클러스터를 사용하려는 경우에는 필요하지 않습니다. 
+|===
+. 다음 FQDN 태그 및 포트 세부 정보를 사용하여 방화벽에 응용 프로그램 규칙을 추가합니다.
++
+** FQDN 태그 - AzureKubernetesService
+** HTTPS:443
+
+
+. 프로토콜 및 포트를 HTTPS:443으로 사용하여 아래 끝점과 함께 대상 FQDN으로 응용 프로그램 규칙을 추가합니다.
++
+[cols="43,57"]
+|===
+| 엔드포인트 | 목적 
+
+
+| https://management.azure.com \https://login.microsoftonline.com 으로 문의하십시오 | Cloud Manager를 사용하면 대부분의 Azure 지역에서 Cloud Volumes ONTAP를 구축 및 관리할 수 있습니다. 
+
+
+| https://management.microsoftazure.de \https://login.microsoftonline.de 으로 문의하십시오 | Cloud Manager를 사용하여 Azure 독일 지역에서 Cloud Volumes ONTAP를 구축 및 관리할 수 있습니다. 
+
+
+| https://management.usgovcloudapi.net \https://login.microsoftonline.com 으로 문의하십시오 | Cloud Manager를 사용하여 Azure US Gov 지역에 Cloud Volumes ONTAP를 배포하고 관리할 수 있습니다. 
+
+
+| https://api.services.cloud.netpp.com 으로 문의하십시오 | NetApp Cloud Central에 API 요청을 허용합니다. 
+
+
+| https://cloud.support.netapp.com.s3.us-west-1.amazonaws.com 으로 문의하십시오 | 소프트웨어 이미지, 매니페스트 및 템플릿에 대한 액세스를 제공합니다. 
+
+
+| https://cognito-idp.us-east-1.amazonaws.com\https://cognito-identity.us-east-1.amazonaws.com\https://sts.amazonaws.com\https://cloud-support-netapp-com-accelerated.s3.amazonaws.com | Connector가 매니페스트, 템플릿 및 Cloud Volumes ONTAP 업그레이드 이미지에 액세스하고 다운로드할 수 있도록 합니다. 
+
+
+| https://cloudmanagerinfraprod.azurecr.io 으로 문의하십시오 | Docker를 실행하는 인프라에 대한 컨테이너 구성 요소의 소프트웨어 이미지에 액세스하고 Cloud Manager와의 서비스 통합을 위한 솔루션을 제공합니다. 
+
+
+| https://kinesis.us-east-1.amazonaws.com 으로 문의하십시오 | NetApp에서 감사 레코드의 데이터를 스트리밍할 수 있습니다. 
+
+
+| https://cloudmanager.cloud.netapp.com 으로 문의하십시오 | NetApp 계정을 포함한 Cloud Manager 서비스와 통신합니다. 
+
+
+| https://netapp-cloud-account.auth0.com 으로 문의하십시오 | NetApp Cloud Central과 통신하여 중앙 집중식 사용자 인증 제공 
+
+
+| https://support.netapp.com 으로 문의하십시오 | NetApp AutoSupport과 커뮤니케이션: 
+
+
+| https://cloud-support-netapp-com.s3.us-west-1.amazonaws.com 으로 문의하십시오 | 시스템 라이센스 및 지원 등록을 위해 NetApp과 커뮤니케이션 
+
+
+| https://client.infra.support.netapp.com.s3.us-west-1.amazonaws.com \https://cloud-support-netapp-com-accelerated.s3.us-west-1.amazonaws.com 으로 문의하십시오 | NetApp에서 지원 문제를 해결하는 데 필요한 정보를 수집할 수 있도록 지원합니다. 
+
+
+| .blob.core.windows.net 으로 문의하십시오 | 프록시를 사용할 때 HA 쌍에 필요합니다. 
+
+
+| https://auth0.com 으로 문의하십시오 | Auth0 인증에 필요합니다. 
+
+
+| https://registry-1.docker.io \https://auth.docker.io \https://production.cloudflare.docker.com 를 참조하십시오 | 이 명령어는 SnapCenter 서비스 워크플로우 엔진의 종속성을 검색합니다. 
+
+
+| https://exteranl-log.cloudmanager.netapp.com 으로 문의하십시오 | 통신을 통해 로그를 Cloud Manager 로그 저장소로 전송할 수 있습니다. 
+|===
+. SnapCenter 서비스를 설치할 서브넷을 선택합니다.
+. 루트가 있는 라우팅 테이블 만들기:
++
+** 서브넷에서 방화벽 내부 IP 주소로 트래픽을 전달합니다
+** 방화벽 공용 IP 주소에서 인터넷으로 트래픽을 전달합니다.
+
+
+. 서브넷에 라우팅 테이블을 첨부합니다.
+
+
+Cloud Manager Connector의 네트워킹 요구사항에 대한 자세한 내용은 를 참조하십시오 https://docs.netapp.com/us-en/cloud-manager-connector/reference-networking-cloud-manager.html["커넥터에 대한 네트워킹 요구 사항"^].
+
+
+
+=== Azure 방화벽 구성
+
+Azure 방화벽 뒤에서 SnapCenter 서비스를 활성화하려면 다음 작업을 수행해야 합니다.
+
+* 필요한 것 *
+
+* 방화벽을 만들어야 합니다(클래식 모드).
+* SnapCenter 서비스에 대한 VNET 및 서브넷을 생성해야 합니다.
+* 방화벽 리소스와 SnapCenter 서비스의 VNET가 서로 다른 테넌트에 있는 경우 Azure 셸의 두 테넌트에 모두 로그인해야 합니다.
+* 방화벽 VNET와 SnapCenter VNET가 다른 경우 VNets 간에 피어링을 설정해야 합니다.
+
+
+* 단계 *
+
+. 를 다운로드합니다 link:media/scs_azure_firewall_config.sh["scs_azure_firewall_config.sh"] 로컬 시스템에 대한 스크립트입니다.
+. 에 로그인합니다 https://azure.microsoft.com/en-in/features/azure-portal/["Microsoft Azure 포털입니다"^].
+. 을 클릭합니다 image:screenshot-azure-cloud-shell.png["Azure 클라우드 쉘의 스크린샷"] 를 눌러 클라우드 쉘을 열고 Bash 콘솔을 선택합니다.
++
+.. Azure 클라우드 셸에 스크립트를 업로드합니다.
+.. 스크립트를 실행할 권한을 할당합니다.
++
+"chmod + x./scs_Azure_firewall_config.sh"를 선택합니다
+
+.. 스크립트를 실행합니다.
++
+'./scs_azure_firewall_config.sh -fwsubid <Firewall_SubscriptionID> -fwname <Firewall_name> -fwrg <Firewall_Resource_group> -scssubid <SnapCenter_Service_SubscriptionID> -scsvnet <SnapCenter_Service_VNET_name> -scsssubnet <SnapCenter_Service_Subnet_name> -scnetservice_vnet_vnssrSnapCenter_service.svnet_cnet_svnet_svnet_cssid<cnet_ssid>
+
++
+
+NOTE: 자원 그룹을 만들지 않은 경우 스크립트는 자원 그룹을 만듭니다. 커넥터를 생성하는 동안 동일한 리소스 그룹을 사용하여 모든 SnapCenter 서비스 관련 리소스가 동일한 리소스 그룹에 있도록 할 수 있습니다.
+
+
+
+
+
+* 결과 *
+
+* 방화벽 규칙이 구성되었습니다.
+* SnapCenter 서비스에 대한 리소스 그룹이 생성됩니다.
+* 라우트 테이블은 SnapCenter 서비스 리소스 그룹에 생성됩니다.
+* 라우팅 테이블 규칙이 구성됩니다.
+* 라우팅 테이블이 서브넷에 연결되어 있습니다.
+
+
+
+
+=== HANA 시스템에 연결
+
+SnapCenter 서비스 클러스터는 HDBSQL 명령을 사용하여 사용자 네트워크의 HANA 시스템과 통신해야 합니다. SnapCenter 클러스터와 HANA 시스템 간의 통신 채널은 다음과 같은 다양한 네트워크 아키텍처를 사용하여 허용되어야 합니다.
+
+* 커넥터 및 SnapCenter 서비스 클러스터는 HANA 시스템과 동일한 VNET에 구축됩니다
+* 커넥터 및 SnapCenter 서비스 클러스터는 HANA 시스템과 마찬가지로 다른 VNET에 구축되며, 통신은 두 VNets 간의 VNET 피어링을 사용하여 설정됩니다.
+* 커넥터와 SnapCenter 서비스 클러스터는 HANA 시스템과 다른 VNET에 구축되며, 통신은 두 VNets 사이의 VPN 게이트웨이를 사용하여 설정됩니다.
+
+
+
+
+=== 보안 그룹 구성
+
+HANA 시스템에 네트워크 보안 그룹(NSG)이 구성되어 있는 경우, 사용자 저장소 키에 지정된 대로 SnapCenter 서비스 포트에서 HANA 시스템 포트로의 인바운드 통신을 허용해야 합니다.
+
+* 프로토콜: 모든 TCP
+* 서브넷: SnapCenter AKS 클러스터 서브넷
+* 용도: HDBSQL 명령을 실행합니다
+
+
+SnapCenter AKS 클러스터에서 실행되는 HANA 서비스는 SSL이 활성화된 HANA 시스템과의 SSL 통신을 지원합니다.

@@ -1,0 +1,46 @@
+---
+sidebar: sidebar 
+permalink: whats-new.html 
+keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes' 
+summary: service>의 새로운 기능에 대해 알아보십시오. 
+---
+= SnapCenter 서비스의 새로운 기능
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+SnapCenter 서비스의 새로운 기능에 대해 알아보십시오.
+
+
+
+== 2021년 12월 21일
+
+
+
+=== Apache log4j 취약점에 대한 수정 사항
+
+SnapCenter 서비스 1.0.1은 Apache log4j를 버전 2.9.1에서 2.17로 업그레이드하여 CVE-2021-44228, CVE-2021-4104, CVE-2021-45105의 취약점을 해결합니다.
+
+SnapCenter 서비스 클러스터는 최신 버전으로 자동 업데이트해야 합니다. SnapCenter 서비스 UI의 버전에 클러스터가 1.0.1.1251 이상임을 표시해야 합니다.
+
+
+
+== 2021년 10월 13일
+
+
+
+=== SnapCenter 서비스 1.0.0 지원
+
+* SnapCenter 서비스는 NetApp ® 클라우드 스토리지에서 실행되는 애플리케이션을 위한 데이터 보호 기능을 제공합니다. NetApp Cloud Manager 내에서 지원되는 SnapCenter 서비스는 Azure NetApp Files(ANF)에 상주하는 SAP HANA ® 시스템을 효율적이고 애플리케이션 정합성이 보장된 정책 기반 백업 및 복원할 수 있도록 제공합니다.
++
+link:concept-overview-architecture-limitation-functionalities-snapcenter-service.html["SnapCenter 서비스에 대해 자세히 알아보십시오"]
+
+* Connector를 생성하고, SnapCenter 서비스를 활성화하고, SAP HANA 시스템을 추가한 다음 백업 및 복원 작업을 수행해야 합니다.
++
+link:task-get-started-snapcenter-service.html["시작하십시오"]
+
+

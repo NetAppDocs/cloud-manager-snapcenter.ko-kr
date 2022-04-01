@@ -1,0 +1,59 @@
+---
+sidebar: sidebar 
+permalink: task-create-azure-connector-user-consent-snapcenter-service.html 
+keywords: azure, connector, cloud central, snapcenter service, user consent, tenant admin, create connector, enable, disable, azure marketplace 
+summary: Azure for SnapCenter 서비스에서 커넥터를 생성합니다. 
+---
+= Azure for SnapCenter 서비스에서 커넥터를 생성합니다
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Manager 기능을 사용하려면 먼저 계정 관리자가 Connector를 배포해야 합니다. Connector를 사용하면 Cloud Manager에서 퍼블릭 클라우드 환경 내의 리소스와 프로세스를 관리할 수 있습니다.
+
+기본적으로 Azure Marketplace에서 Connector를 만들 수 있습니다. 의 단계를 수행하는 동안 https://docs.netapp.com/us-en/cloud-manager-connector/task-launching-azure-mktp.html["Azure Marketplace에서 커넥터를 만듭니다"^]다음 사항을 기억해야 합니다.
+
+* Cloud Manager for Cloud Volumes ONTAP가 지정된 모든 곳에서 SnapCenter 서비스에도 활용할 수 있습니다.
+* Cloud Manager Name의 경우 더 나은 식별을 위해 Connector VM 이름을 지정합니다. Cloud Manager UI에서 커넥터 이름으로 표시됩니다.
+* 공용 IP를 사용하지 않고 커넥터를 구성했거나 방화벽을 구성한 경우 커넥터 시스템에 연결할 점프 호스트가 있어야 합니다.
+
+
+있는 경우 https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/configure-user-consent?tabs=azure-portal#user-consent-settings["사용자 동의"^] Azure Active Directory에서 활성화되었거나 테넌트 관리자가 동의를 제공할 수 있는 경우 Cloud Manager UI에서 Connector를 생성할 수 있습니다.
+
+
+
+== 사용자 동의가 활성화되었습니다
+
+Azure Active Directory에서 사용자 동의가 활성화된 경우 https://docs.netapp.com/us-en/cloud-manager-connector/task-creating-connectors-azure.html["Cloud Manager에서 커넥터를 생성합니다"^].
+
+
+
+== 사용자 동의가 비활성화되었습니다
+
+. 다음 중 하나를 수행합니다.
++
+** Active Directory에서 관리자 동의 워크플로가 구성된 경우 다음을 수행해야 합니다 https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/configure-admin-consent-workflow#how-users-request-admin-consent["관리자 동의 요청"^].
+** 관리자 동의 워크플로가 구성되어 있지 않은 경우 다음을 수행해야 합니다.
++
+... https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/grant-admin-consent#construct-the-url-for-granting-tenant-wide-admin-consent["테넌트 전체 관리자 동의를 부여하기 위한 URL을 구성합니다"^].
++
+
+NOTE: ClientID를 _989efff4-9a9e-46fa-9f17-de39e15714f9_로 지정합니다. Cloud Manager 마법사에서 이름이 지정된 Cloud Manager Azure 애플리케이션 ID입니다.
+
+... 테넌트 관리자에게 브라우저에서 URL을 실행하고 동의하도록 요청합니다.
++
+관리자가 표시된 오류를 무시할 수 있습니다
+
+
+
+
+
+. https://docs.netapp.com/us-en/cloud-manager-connector/task-creating-connectors-azure.html["Cloud Manager에서 커넥터를 생성합니다"^].
+
+
+
+IMPORTANT: 커넥터를 생성하는 동안 제공된 사용자 이름 및 암호 또는 키는 컴퓨터에 연결해야 합니다

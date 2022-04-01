@@ -1,0 +1,95 @@
+---
+settings:
+  name: SnapCenter Service
+  platform: cloud
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  langs: ko-kr,us-en,ja-jp,zh-cn
+sidebar:
+  entries:
+  - title: 모든 Cloud Manager 설명서
+    url: https://docs.netapp.com/us-en/cloud-manager-family
+  - title: SnapCenter 서비스 문서
+    url: "/index.html"
+  - title: 릴리스 정보
+    url: "/whats-new.html"
+  - title: 시작하십시오
+    entries:
+    - title: SnapCenter 서비스에 대해 자세히 알아보십시오
+      url: "/concept-overview-architecture-limitation-functionalities-snapcenter-service.html"
+    - title: 빠른 시작
+      url: "/reference-get-started-snapcenter-service.html"
+    - title: 커넥터를 생성하고 SnapCenter 서비스를 활성화하기 위한 필수 구성 요소입니다
+      url: "/reference-prerequisites-azure-connector-snapcenter-service.html"
+    - title: Azure for SnapCenter 서비스에서 커넥터를 생성합니다
+      url: "/task-create-azure-connector-user-consent-snapcenter-service.html"
+    - title: Azure NetApp Files용 SnapCenter 서비스를 활성화합니다
+      url: "/task-enable-snapcenter-service-azure-netapp-files.html"
+    - title: HDBSQL 클라이언트를 설치합니다
+      url: "/task-install-hdbsql-client-snapcenter-service.html"
+  - title: SnapCenter 서비스를 사용하여 SAP HANA 시스템 보호
+    entries:
+    - title: SAP HANA 시스템 추가
+      url: "/task-add-sap-hana-systems-non-data-volumes-snapcenter-service.html"
+    - title: SAP HANA 시스템 백업
+      url: "/task-create-backup-ondemand-policies-schedule-sap-hana.html"
+    - title: SAP HANA 시스템 복원
+      url: "/task-restore-sap-hana-systems.html"
+    - title: 운영 관리
+      url: "/reference-manage-dashboard-monitor-notification-snapcenter-service.html"
+    - title: 문제를 해결합니다
+      url: "/reference-troubleshoot-solution-issue.html"
+  - title: 지식 및 지원
+    entries:
+    - title: 지원을 위해 등록하십시오
+      url: "/task-support-registration.html"
+    - title: 도움을 받으십시오
+      url: "/task-get-help.html"
+  - title: 법적 고지
+    url: "/legal-notices.html"
+homepage:
+  tiles:
+  - title: 시작하십시오
+    links:
+    - title: 새로운 소식
+      url: "/whats-new.html"
+    - title: SnapCenter 서비스에 대해 자세히 알아보십시오
+      url: "/concept-overview-architecture-limitation-functionalities-snapcenter-service.html"
+    - title: 빠른 시작
+      url: "/reference-get-started-snapcenter-service.html"
+  - title: SnapCenter 서비스를 활성화합니다
+    links:
+    - title: 필수 구성 요소
+      url: "/reference-prerequisites-azure-connector-snapcenter-service.html"
+    - title: 커넥터를 작성합니다
+      url: "/task-create-azure-connector-user-consent-snapcenter-service.html"
+    - title: SnapCenter 서비스를 활성화합니다
+      url: "/task-enable-snapcenter-service-azure-netapp-files.html"
+    - title: HDBSQL 클라이언트를 설치합니다
+      url: "/task-install-hdbsql-client-snapcenter-service.html"
+  - title: SAP HANA 시스템 보호
+    links:
+    - title: SAP HANA 시스템 추가
+      url: "/task-add-sap-hana-systems-non-data-volumes-snapcenter-service.html"
+    - title: SAP HANA 시스템 백업
+      url: "/task-create-backup-ondemand-policies-schedule-sap-hana.html"
+    - title: SAP HANA 시스템 복원
+      url: "/task-restore-sap-hana-systems.html"
+  - title: 지식 지원
+    links:
+    - title: 지원을 위해 등록하십시오
+      url: "/task-support-registration.html"
+    - title: 도움을 받으십시오
+      url: "/task-get-help.html"
+  - title: 블로그 커뮤니티
+    links:
+    - title: NetApp 커뮤니티
+      url: https://community.netapp.com/t5/Cloud-Data-Services/ct-p/CDS
+    - title: Cloud Central 블로그
+      url: https://cloud.netapp.com/blog
+    - title: 클라우드 웨비나
+      url: https://cloud.netapp.com/events
+product-family: {}

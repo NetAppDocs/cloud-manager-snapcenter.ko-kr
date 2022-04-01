@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blocks>
+  <block id="34121089909a31947c54129b515d4b5f" category="summary">실행된 작업의 상태를 모니터링하고, 이메일 알림을 수신하고, 대시보드를 볼 수 있습니다.</block>
+  <block id="41b4e5d916e26c9e0d32ceff6fd589ed" category="doc">운영 관리</block>
+  <block id="4639d0e2e2909a747265c2f704128bca" category="section-title">작업을 모니터링합니다</block>
+  <block id="f593149ce73a2c77bd9c3ad43f6f72b2" category="paragraph">SnapCenter 서비스 페이지에서 * 작업 모니터 * 를 클릭하여 작업 상태를 확인합니다. 작업 모니터 페이지에는 전체 요약이 표시되고 모든 작업이 나열됩니다.</block>
+  <block id="fa1c9e28106b05f396bc61c0675e095e" category="inline-image-macro">세부 정보를 볼 수 있는 아이콘의 스크린샷</block>
+  <block id="7088b8034cb794350a5fc5ef129274bb" category="paragraph">그런 다음 을 클릭할 수 있습니다 <block ref="7c7910c2beb8437dc7aa4b8b65a637e8" category="inline-image-macro-rx" type="image"></block> 특정 작업에 해당하여 세부 정보를 봅니다.</block>
+  <block id="ecec91844d8e95643f8ddacd181ec4c0" category="inline-image-macro">작업 모니터 페이지의 스크린 샷</block>
+  <block id="848be2be6f65cefa3d81956ea8872d39" category="paragraph"><block ref="848be2be6f65cefa3d81956ea8872d39" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c974e2366aaf03c2ef4696101c8d7f62" category="section-title">이메일 알림입니다</block>
+  <block id="f9e6436ca6616e01b0447d5324d7cb64" category="paragraph">이메일 알림은 실패한 주문형 백업, 예약된 백업 및 복원 작업에 대해 기본적으로 전송됩니다. "계정 관리자" 역할을 가진 Cloud Manager 사용자만 이메일을 받게 됩니다.</block>
+  <block id="fea84990764109b117844dae6e7232a7" category="section-title">대시보드 보기</block>
+  <block id="f3f9b42bf5249ca96d1002dd6a400489" category="paragraph">보호 요약, 구성 세부 정보 및 작업 상태를 보려면 SnapCenter 서비스 페이지에서 * 개요 * 를 클릭하십시오.</block>
+  <block id="d93b727eea86e7cfe22810ad4d54d6fe" category="inline-image-macro">대시보드의 스크린샷</block>
+  <block id="1c1aa7efcf441f4b4084baa7c289a9da" category="paragraph"><block ref="1c1aa7efcf441f4b4084baa7c289a9da" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e7cfd9476b70a39fe06e26c19f27e8d4" category="summary">service&gt;의 새로운 기능에 대해 알아보십시오.</block>
+  <block id="6af4ad198ad0d68e7e5efb1b62491163" category="doc">SnapCenter 서비스의 새로운 기능</block>
+  <block id="e7481530c4cf2aa274134d89c42b9e40" category="paragraph">SnapCenter 서비스의 새로운 기능에 대해 알아보십시오.</block>
+  <block id="5e057a1bffc9bad13fd5567d9b86dd0b" category="section-title">2021년 12월 21일</block>
+  <block id="b59fdb8f9fe5a28d08cd50bf85b70880" category="section-title">Apache log4j 취약점에 대한 수정 사항</block>
+  <block id="6b6f87c741f6734b4908d03d2c21e449" category="paragraph">SnapCenter 서비스 1.0.1은 Apache log4j를 버전 2.9.1에서 2.17로 업그레이드하여 CVE-2021-44228, CVE-2021-4104, CVE-2021-45105의 취약점을 해결합니다.</block>
+  <block id="ae1f9a5afbc7e02967d7f7e643135d82" category="paragraph">SnapCenter 서비스 클러스터는 최신 버전으로 자동 업데이트해야 합니다. SnapCenter 서비스 UI의 버전에 클러스터가 1.0.1.1251 이상임을 표시해야 합니다.</block>
+  <block id="8dc0422412ec550e4062c55e01a38bdf" category="section-title">2021년 10월 13일</block>
+  <block id="c83ebe5a7133a377b69bf636c6a38972" category="section-title">SnapCenter 서비스 1.0.0 지원</block>
+  <block id="49d75fd1ab909bc01be79453066d9eed" category="list-text">SnapCenter 서비스는 NetApp ® 클라우드 스토리지에서 실행되는 애플리케이션을 위한 데이터 보호 기능을 제공합니다. NetApp Cloud Manager 내에서 지원되는 SnapCenter 서비스는 Azure NetApp Files(ANF)에 상주하는 SAP HANA ® 시스템을 효율적이고 애플리케이션 정합성이 보장된 정책 기반 백업 및 복원할 수 있도록 제공합니다.</block>
+  <block id="fbfdf1d6957e93185289dd5c3d913313" category="inline-link-macro">SnapCenter 서비스에 대해 자세히 알아보십시오</block>
+  <block id="135197b35874749c250f6afa57f0ff27" category="paragraph"><block ref="135197b35874749c250f6afa57f0ff27" category="inline-link-macro-rx"></block></block>
+  <block id="0e5d1d663ddc19adea8b1572c120bb29" category="list-text">Connector를 생성하고, SnapCenter 서비스를 활성화하고, SAP HANA 시스템을 추가한 다음 백업 및 복원 작업을 수행해야 합니다.</block>
+  <block id="be11c74c1dd7f307bb80183a90dc2067" category="inline-link-macro">시작하십시오</block>
+  <block id="54618d81cd5e2ddaf94c957f9a469733" category="paragraph"><block ref="54618d81cd5e2ddaf94c957f9a469733" category="inline-link-macro-rx"></block></block>
+  <block id="57ee7a6bafea27c646cb01aafe7dd10b" category="summary">SnapCenter 서비스는 NetApp ® 클라우드 스토리지에서 실행되는 애플리케이션을 위한 데이터 보호 기능을 제공합니다.</block>
+  <block id="2857bf9cdb09e82d142fcf8c75e3dddd" category="paragraph">SnapCenter 서비스는 NetApp ® 클라우드 스토리지에서 실행되는 애플리케이션을 위한 데이터 보호 기능을 제공합니다. NetApp Cloud Manager 내에서 지원되는 SnapCenter 서비스는 Azure NetApp Files에 상주하는 SAP HANA ® 시스템을 효율적이고 애플리케이션 정합성이 보장된 정책 기반 백업 및 복원할 수 있도록 제공합니다.</block>
+  <block id="2d242bb36ec91b32005f9296ff03a912" category="section-title">있습니다</block>
+  <block id="513a2390db98d4f0ba37da28a7d1587d" category="paragraph">SnapCenter 서비스의 아키텍처에는 다음과 같은 구성 요소가 포함되어 있습니다.</block>
+  <block id="0cb78051937dcdfa481a00adfe92b44c" category="list-text">SnapCenter 서비스 UI는 Cloud Manager UI와 통합됩니다.</block>
+  <block id="5e402e5733f23466f909b4dddce5ce9d" category="paragraph">SnapCenter 서비스 UI는 NetApp에서 관리하는 Cloud Manager SaaS 프레임워크에서 제공되며, 다양한 스토리지 및 데이터 관리 기능을 제공합니다.</block>
+  <block id="c62eff60a207d361457d7988554c47e9" category="list-text">Cloud Manager Connector는 Cloud Manager의 구성 요소로, SnapCenter 서비스와 기타 서비스의 라이프사이클 관리를 담당합니다.</block>
+  <block id="0b9e0b328d8020e082a1f884358906c1" category="list-text">SnapCenter 서비스는 Azure Kubernetes Service(AKS)에서 호스팅되는 데이터 보호 서비스 세트로 데이터 보호 워크플로우를 조정합니다.</block>
+  <block id="d661ac57836862a50ff660a3a5ef7050" category="admonition">Cloud Manager Connector와 SnapCenter 서비스는 클라우드 네트워크에 구축됩니다.</block>
+  <block id="598cf35ade704319b9e8bddff2c8ceed" category="paragraph">다음 다이어그램은 SnapCenter 서비스의 각 구성 요소 간의 관계를 보여 줍니다.</block>
+  <block id="d93e5f790e67aaca6355f62dc92171a9" category="inline-image-macro">SnapCenter 서비스 아키텍처</block>
+  <block id="b80b3f02255d5bb643bacaa5ec3b9b88" category="paragraph"><block ref="b80b3f02255d5bb643bacaa5ec3b9b88" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ffc5a4c8a65021a0092a0cc880066de3" category="paragraph">사용자가 시작한 요청의 경우 SnapCenter 서비스 UI는 클라우드 관리자 SaaS와 통신하며, 요청에 대한 유효성 검사가 완료되면 Cloud Manager Connector로 통화를 전달합니다. 그런 다음 커넥터는 SnapCenter 서비스와 통신하고 SnapCenter 서비스는 Azure NetApp Files 관리 API 및 HANA 시스템 명령을 호출하여 데이터 보호 작업을 수행합니다.</block>
+  <block id="cc5d9a3e5390dceaaf6d51e30e25ac34" category="paragraph">SnapCenter 서비스는 HANA 시스템과 동일한 VNET에 구축하거나 다른 서비스로 구축할 수 있습니다. SnapCenter 서비스와 HANA 시스템이 서로 다른 네트워크에 있는 경우 네트워크 연결을 설정해야 합니다.</block>
+  <block id="e277e42688a9f44945fa8c1919bab726" category="section-title">지원되는 기능</block>
+  <block id="7fca755928420c21cb693a0ea4c54420" category="paragraph">SnapCenter 서비스는 다음 기능을 지원합니다.</block>
+  <block id="0660503bc6f812546b833599898cf6e1" category="list-text">SAP HANA 시스템 추가</block>
+  <block id="045ef90684cdf66906481582d855554f" category="list-text">SAP HANA 시스템 백업</block>
+  <block id="6614abf565ef618b3fb893bc313b5936" category="list-text">스냅샷 기반 백업과 파일 기반 백업을 모두 지원합니다</block>
+  <block id="0fd447bf0e43ac440f4e8620830036c9" category="list-text">SAP HANA 시스템의 주문형 백업을 지원합니다</block>
+  <block id="2c923a35a6614e72e23a7f3acaec0d32" category="list-text">시스템 정의 정책 또는 사용자 지정 정책을 사용하여 SAP HANA 시스템의 예약된 백업을 지원합니다</block>
+  <block id="4daab712a81f483acc692f943dfe93d2" category="paragraph">정책에서 시간별, 일별, 주별 및 월별 등 다양한 예약 빈도를 지정할 수 있습니다.</block>
+  <block id="5b97833b94f74584fbcc067437967b7f" category="list-text">비 데이터 볼륨 및 글로벌 비 데이터 볼륨 백업을 지원합니다</block>
+  <block id="6e8413d03b75fe5c129c80ecf66704ec" category="list-text">정책을 기반으로 백업을 유지합니다</block>
+  <block id="d425231015105a09e4350149bbaf024c" category="list-text">사용자 지정 백업에서 SAP HANA 시스템 복원</block>
+  <block id="60d9a229099000fec5710894db8b263b" category="list-text">백업 및 기타 작업 모니터링</block>
+  <block id="c8ed27e18f0091672a5371f0280b6317" category="list-text">HANA 시스템에 데이터 및 로그 백업 카탈로그 관리</block>
+  <block id="0ef1d9e4301aa4044b0bf2a6379c6a24" category="list-text">보호 요약, 구성 세부 정보 및 작업 상태를 대시보드에 표시합니다</block>
+  <block id="2dbc045edb5a2f6faf0c411d7f5f750f" category="list-text">이메일을 통해 알림 전송</block>
+  <block id="e646e16bee8b32e6ea29e30d01970a6c" category="section-title">제한 사항</block>
+  <block id="8f2191123e919410a80a597629962d59" category="paragraph">SnapCenter 서비스 1.0에는 다음과 같은 제한 사항이 있습니다.</block>
+  <block id="e4b3550f0d9c607881ab2370e1a387ad" category="list-text">국제화는 지원되지 않으므로 영어 브라우저를 사용해야 합니다.</block>
+  <block id="e5f8d4769a63109ecb2722c68e03ff0b" category="list-text">"계정 관리자" 역할을 가진 클라우드 관리자 사용자만 SnapCenter 서비스를 활성화할 수 있습니다.</block>
+  <block id="074f7e44ec062bc40b2a28831094e8b0" category="list-text">AKS(Azure Kubernetes Service) 클러스터 노드 장애와 관련된 제한 사항</block>
+  <block id="d65bac40c733be290764cfa1afcd0028" category="list-text">AKS 클러스터에서 노드 중 하나가 오프라인이 되면 기내 작업이 실패할 수 있지만 후속 작업은 실행됩니다.</block>
+  <block id="01f43c13339561a534e9d1c6e9596cbe" category="list-text">AKS 클러스터에서 노드 중 하나가 중지되면 SAP HANA 시스템을 추가할 수 없지만 다른 작업은 문제 없이 실행됩니다.</block>
+  <block id="84dee3e862191038e6eafc735f16f8bc" category="paragraph">HANA 시스템을 추가하려면 노드를 가져와야 합니다.</block>
+  <block id="7b1d0a7b2fe33ab114a0bad8a36c2028" category="list-text">스케줄러는 고가용성 구성을 지원하지 않습니다.</block>
+  <block id="5e526f6e213483b562087f07e477b924" category="paragraph">스케줄러에서 사용하는 MySQL 노드가 다운되면 예약된 작업을 계속하려면 노드를 가져와야 합니다.</block>
+  <block id="ce21e7ae4271271294ccbf54c8fd6864" category="summary">NetApp은 다양한 방법으로 Cloud Manager를 지원합니다. 기술 자료(KB) 기사 및 커뮤니티 포럼과 같은 광범위한 무료 셀프 지원 옵션이 24x7 제공됩니다. 지원 등록에는 웹 티켓팅을 통한 원격 기술 지원이 포함됩니다.</block>
+  <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">도움을 받으십시오</block>
+  <block id="d41d8cd98f00b204e9800998ecf8427e" category="inline-link-macro"></block>
+  <block id="7ccaf84febc0ed633fbdbadb8d488a7e" category="paragraph"><block ref="7ccaf84febc0ed633fbdbadb8d488a7e" category="inline-link-macro-rx"></block></block>
+  <block id="fab4191c3282be9232a1f75270ad2e77" category="summary">커넥터를 생성하고 SnapCenter 서비스를 활성화하기 전에 사전 요구 사항을 충족하는지 확인하십시오.</block>
+  <block id="0d2207ddfa0465f7fdc075a16c7103c2" category="doc">커넥터를 생성하고 SnapCenter 서비스를 활성화하기 위한 필수 구성 요소입니다</block>
+  <block id="c0765d49289193632cbeb8f73e33c513" category="paragraph">Azure에서 커넥터를 생성하고 SnapCenter 서비스를 활성화하기 전에 특정 사항을 확인해야 합니다.</block>
+  <block id="d895b712b3b71cc40eb2a7d81a7d98c1" category="list-text">Connector에 대해 선택한 서브넷이 Azure Kubernetes Service(AKS)에 예약된 다음 IP 주소 범위와 겹치지 않아야 합니다. 169.254.0.0/16, 172.30.0.0/16, 172.31.0.0/16 및 192.0.2.0/24.</block>
+  <block id="649ede51d8c8c14a5e4e777f24caada1" category="list-text">선택한 서브넷에서 실행 중인 AKS가 없는지 확인합니다.</block>
+  <block id="078e3debfd8d4cacff33f8a37fbedd67" category="list-text">선택한 서브넷이 해당 포트의 SAP HANA 시스템에 액세스할 수 있는지 확인합니다.</block>
+  <block id="cd8147d7e135b3f48f9894be4ece54ae" category="list-text">선택한 서브넷의 VNET가 SAP HANA 시스템의 VNET와 다른 경우 VNets가 VPN 게이트웨이, 피어링 또는 기타 수단을 통해 서로 통신할 수 있는지 확인합니다.</block>
+  <block id="de852f7cca61372fa7c7ccbc0dd82e43" category="list-text">방화벽 뒤에서 SnapCenter 서비스를 활성화하려면 에 설명된 작업을 수행해야 합니다 <block ref="68fbd50b94d97a9277102194b88f11ae" category="inline-xref-macro-rx"></block>.</block>
+  <block id="6d9f088dc89f4a4aeadbeef6d90ff1b1" category="paragraph">SnapCenter 서비스를 방화벽 뒤에서 활성화할지 여부를 먼저 결정해야 합니다. SnapCenter 서비스를 활성화한 후에는 방화벽 뒤에서 실행되도록 구성할 수 없습니다. 이는 AKS의 제한 사항입니다.</block>
+  <block id="bdd8837c5f5666c1f37ec05326aa385f" category="section-title">네트워크 요구 사항</block>
+  <block id="1779c5257c3a2a3721afa88583df89ff" category="paragraph">Connector가 클라우드 환경 내의 리소스 및 프로세스를 관리할 수 있도록 네트워크를 설정합니다.</block>
+  <block id="7b5ab8d4f5391ce5b1dfdc1f7332745e" category="section-title">방화벽 구성</block>
+  <block id="81a2acf3e6167e34cd699935444b3487" category="paragraph">방화벽 뒤에서 SnapCenter 서비스를 활성화하려면 다음 작업을 수행해야 합니다.</block>
+  <block id="ac7071f5d59a4b63a6324710c31a3144" category="admonition">Azure 방화벽을 사용하는 경우 스크립트를 사용하여 다음 단계를 수행할 수 있습니다. 자세한 내용은 을 참조하십시오 <block ref="0e344aded8c812d6b4469cf9fa62d95a" category="inline-xref-macro-rx"></block>.</block>
+  <block id="4839d2f25cc35b249d5db15efa1afd75" category="paragraph">* 단계 *</block>
+  <block id="a8d6982cd3fbdb6cb9296d46f8f664ce" category="list-text">아래 네트워크 규칙을 방화벽에 추가합니다.</block>
+  <block id="4abc505ff15216e855719ff1190f9129" category="cell">대상 끝점</block>
+  <block id="888a77f5ac0748b6c8001822417df8b6" category="cell">프로토콜</block>
+  <block id="60aaf44d4b562252c04db7f98497e9aa" category="cell">포트</block>
+  <block id="8413c683b4b27cc3f4dbd4c90329d8ba" category="cell">설명</block>
+  <block id="95ff646a131318136e3b364356af9071" category="inline-link">서비스 태그</block>
+  <block id="c3ad2360b3772057a330b592a5f89b9c" category="cell"><block ref="e36984cf9325fa701aa22032e29b2193" category="inline-link-rx"></block> -AzureCloud.&lt;Region&gt;:1194</block>
+  <block id="f5ef036b4d8b630721e51fe23489fbc9" category="cell">UDP입니다</block>
+  <block id="a42a596fc71e17828440030074d15e74" category="cell">1194</block>
+  <block id="70cd7986bd7c7fbebca64d1871f45d2f" category="cell">전용 커넥터 및 전용 SnapCenter 서비스 클러스터를 사용하려는 경우에는 필요하지 않습니다.</block>
+  <block id="e7c8d06cef56d0e49ba567fc4afa499b" category="cell"><block ref="e36984cf9325fa701aa22032e29b2193" category="inline-link-rx"></block> -AzureCloud.&lt;Region&gt;:9000</block>
+  <block id="b136ef5f6a01d816991fe3cf7a6ac763" category="cell">TCP</block>
+  <block id="d5ab8dc7ef67ca92e41d730982c5c602" category="cell">9000입니다</block>
+  <block id="b6d149452b9fd5e37b58297f7cf3ce17" category="cell">FQDN-ntp.ubuntu.com:123 을 참조하십시오</block>
+  <block id="202cb962ac59075b964b07152d234b70" category="cell">123을 선택합니다</block>
+  <block id="3cc884a2a2698451ca4ddec60e214a3b" category="cell">Azure 가상 머신의 시간 동기화에 필요합니다.</block>
+  <block id="78653adbcf922303403b93e578386121" category="cell"><block ref="e36984cf9325fa701aa22032e29b2193" category="inline-link-rx"></block> -AzureCloud.&lt;Region&gt;:443</block>
+  <block id="13f3cf8c531952d72e5847c4183e6910" category="cell">443</block>
+  <block id="0f4c193c7c60bd9a00e57e716b84745e" category="list-text">다음 FQDN 태그 및 포트 세부 정보를 사용하여 방화벽에 응용 프로그램 규칙을 추가합니다.</block>
+  <block id="39a9cf78a3899a808563a113f59510c4" category="list-text">FQDN 태그 - AzureKubernetesService</block>
+  <block id="4e0aa98bae821751635910f38f127bbf" category="list-text">HTTPS:443</block>
+  <block id="90214e3af3d565e5e576209ccd3b568d" category="list-text">프로토콜 및 포트를 HTTPS:443으로 사용하여 아래 끝점과 함께 대상 FQDN으로 응용 프로그램 규칙을 추가합니다.</block>
+  <block id="b8724da75fb917e992576b17378e66b3" category="cell">엔드포인트</block>
+  <block id="261addf78c7b2c961032b3dd08ba0b1f" category="cell">목적</block>
+  <block id="cc328ccddf672987f092ca6f44c9f9cf" category="cell">https://management.azure.com \https://login.microsoftonline.com 으로 문의하십시오</block>
+  <block id="8418435eb29b0823b3e64b30b81cb9d4" category="cell">Cloud Manager를 사용하면 대부분의 Azure 지역에서 Cloud Volumes ONTAP를 구축 및 관리할 수 있습니다.</block>
+  <block id="7e42575d1287c35b22447424ad76b6c6" category="cell">https://management.microsoftazure.de \https://login.microsoftonline.de 으로 문의하십시오</block>
+  <block id="c48bf3751390506e38bd903eec2dc0c9" category="cell">Cloud Manager를 사용하여 Azure 독일 지역에서 Cloud Volumes ONTAP를 구축 및 관리할 수 있습니다.</block>
+  <block id="67b376950210ebd8b7c9b01244118cb1" category="cell">https://management.usgovcloudapi.net \https://login.microsoftonline.com 으로 문의하십시오</block>
+  <block id="395c2906b95b841baa6af2c3023e37d6" category="cell">Cloud Manager를 사용하여 Azure US Gov 지역에 Cloud Volumes ONTAP를 배포하고 관리할 수 있습니다.</block>
+  <block id="beb16e53b548a5269e5af9de9c6d391d" category="cell">https://api.services.cloud.netpp.com 으로 문의하십시오</block>
+  <block id="24ba84c7d78074d10c6d1b8143028abf" category="cell">NetApp Cloud Central에 API 요청을 허용합니다.</block>
+  <block id="cc363419596ef971d1cfc93096f69ebe" category="cell">https://cloud.support.netapp.com.s3.us-west-1.amazonaws.com 으로 문의하십시오</block>
+  <block id="0f7fc0e257736da2b0e583e49778bf2f" category="cell">소프트웨어 이미지, 매니페스트 및 템플릿에 대한 액세스를 제공합니다.</block>
+  <block id="d4c81973318a62a51b25ed291b04a0fa" category="cell">https://cognito-idp.us-east-1.amazonaws.com\https://cognito-identity.us-east-1.amazonaws.com\https://sts.amazonaws.com\https://cloud-support-netapp-com-accelerated.s3.amazonaws.com</block>
+  <block id="49f115dd35a8be23d6f483e5ab7c8c1d" category="cell">Connector가 매니페스트, 템플릿 및 Cloud Volumes ONTAP 업그레이드 이미지에 액세스하고 다운로드할 수 있도록 합니다.</block>
+  <block id="9dcb0a1d3281e001a6085626a264be49" category="cell">https://cloudmanagerinfraprod.azurecr.io 으로 문의하십시오</block>
+  <block id="1b9f42efcf7ffef4d1daf55f12ea8909" category="cell">Docker를 실행하는 인프라에 대한 컨테이너 구성 요소의 소프트웨어 이미지에 액세스하고 Cloud Manager와의 서비스 통합을 위한 솔루션을 제공합니다.</block>
+  <block id="c46b9566ce96156ab310817351ef2854" category="cell">https://kinesis.us-east-1.amazonaws.com 으로 문의하십시오</block>
+  <block id="3414f3bd5331c7e91fdcac0502875dcb" category="cell">NetApp에서 감사 레코드의 데이터를 스트리밍할 수 있습니다.</block>
+  <block id="115781a0043a85f8707c5c99fd02dc75" category="cell">https://cloudmanager.cloud.netapp.com 으로 문의하십시오</block>
+  <block id="e26cb925e48bab5bb2ee58ee723b2677" category="cell">NetApp 계정을 포함한 Cloud Manager 서비스와 통신합니다.</block>
+  <block id="300f031c227ed1b4448a8bb51abec2bb" category="cell">https://netapp-cloud-account.auth0.com 으로 문의하십시오</block>
+  <block id="cd9bbb2df00a50fb31caf47496bd1afe" category="cell">NetApp Cloud Central과 통신하여 중앙 집중식 사용자 인증 제공</block>
+  <block id="8963387394e2ee3e2a5a9ba160566a58" category="cell">https://support.netapp.com 으로 문의하십시오</block>
+  <block id="09e16c84de2d84cfe996c648810bb86e" category="cell">NetApp AutoSupport과 커뮤니케이션:</block>
+  <block id="c384191d9c0ac29b941a0cb1ecefdb33" category="cell">https://cloud-support-netapp-com.s3.us-west-1.amazonaws.com 으로 문의하십시오</block>
+  <block id="07c166aca47c65ea90c6b4920d6f5238" category="cell">시스템 라이센스 및 지원 등록을 위해 NetApp과 커뮤니케이션</block>
+  <block id="d55a44e3e50c967211a7ba30769f882b" category="cell">https://client.infra.support.netapp.com.s3.us-west-1.amazonaws.com \https://cloud-support-netapp-com-accelerated.s3.us-west-1.amazonaws.com 으로 문의하십시오</block>
+  <block id="4bbfae92a0503a50c87d2a06b2b50f3b" category="cell">NetApp에서 지원 문제를 해결하는 데 필요한 정보를 수집할 수 있도록 지원합니다.</block>
+  <block id="38fe983310530d407e19ffc2b53a62d4" category="cell">.blob.core.windows.net 으로 문의하십시오</block>
+  <block id="5b3f477437c1f9552e24f326a02b0e37" category="cell">프록시를 사용할 때 HA 쌍에 필요합니다.</block>
+  <block id="fdb51f8a262ef532926feb44b010cb72" category="cell">https://auth0.com 으로 문의하십시오</block>
+  <block id="a92552df98cc7c22cdbfdace71746996" category="cell">Auth0 인증에 필요합니다.</block>
+  <block id="106221c74a466779b3e9349294fafb42" category="cell">https://registry-1.docker.io \https://auth.docker.io \https://production.cloudflare.docker.com 를 참조하십시오</block>
+  <block id="ba93b2cf835f60c15659402045cad64b" category="cell">이 명령어는 SnapCenter 서비스 워크플로우 엔진의 종속성을 검색합니다.</block>
+  <block id="d442568bc1c240386ded0f1d8a2f0fe6" category="cell">https://exteranl-log.cloudmanager.netapp.com 으로 문의하십시오</block>
+  <block id="d5b93712c46b220e3c2ec2d23b1feef5" category="cell">통신을 통해 로그를 Cloud Manager 로그 저장소로 전송할 수 있습니다.</block>
+  <block id="bc6992e070d9e1340211ed3471c0b114" category="list-text">SnapCenter 서비스를 설치할 서브넷을 선택합니다.</block>
+  <block id="e8dbaa0ff37377c7340b96045fd91935" category="list-text">루트가 있는 라우팅 테이블 만들기:</block>
+  <block id="d0291b23b73320fe3ebf3534ec7af3ea" category="list-text">서브넷에서 방화벽 내부 IP 주소로 트래픽을 전달합니다</block>
+  <block id="9e4cfd7ef75c01c5ac965cb1ba1bac37" category="list-text">방화벽 공용 IP 주소에서 인터넷으로 트래픽을 전달합니다.</block>
+  <block id="4bef0203103722e65f656f8c35646b87" category="list-text">서브넷에 라우팅 테이블을 첨부합니다.</block>
+  <block id="7ebcb503cdda50b6cfafe4b188689a5c" category="inline-link">커넥터에 대한 네트워킹 요구 사항</block>
+  <block id="d9b18cee7a313ead74dd7a023666ffa9" category="paragraph">Cloud Manager Connector의 네트워킹 요구사항에 대한 자세한 내용은 를 참조하십시오<block ref="57f818e1db49e293a718988eb6d733d8" category="inline-link-rx"></block>.</block>
+  <block id="ca3fae953ace3814f44551f58d2984bf" category="section-title">Azure 방화벽 구성</block>
+  <block id="bd114f893a39a34dfb70d101f6cc8d27" category="paragraph">Azure 방화벽 뒤에서 SnapCenter 서비스를 활성화하려면 다음 작업을 수행해야 합니다.</block>
+  <block id="d428ebb7ac02e1484781b38a799a4f99" category="paragraph">* 필요한 것 *</block>
+  <block id="3f542b45e89ad1bf8724f107638c51b8" category="list-text">방화벽을 만들어야 합니다(클래식 모드).</block>
+  <block id="68507bbad35dc0ac17872d2839fd06b8" category="list-text">SnapCenter 서비스에 대한 VNET 및 서브넷을 생성해야 합니다.</block>
+  <block id="f8f9291d183aee85540a5ac1861dfbd3" category="list-text">방화벽 리소스와 SnapCenter 서비스의 VNET가 서로 다른 테넌트에 있는 경우 Azure 셸의 두 테넌트에 모두 로그인해야 합니다.</block>
+  <block id="54c016a1d891dc30439989dbae8027e8" category="list-text">방화벽 VNET와 SnapCenter VNET가 다른 경우 VNets 간에 피어링을 설정해야 합니다.</block>
+  <block id="8b5181a0b2fc5bd5523b1cbbe0f65c94" category="inline-link-macro">scs_azure_firewall_config.sh</block>
+  <block id="f593996d6386a4a5d25414318ff9b2e7" category="list-text">를 다운로드합니다 <block ref="984e53de2fde74764f8c34aa53659aa0" category="inline-link-macro-rx"></block> 로컬 시스템에 대한 스크립트입니다.</block>
+  <block id="26d0a1022b03f4ffe6de4d98e6a49cc2" category="inline-link">Microsoft Azure 포털입니다</block>
+  <block id="f0516e5c83e81b0be819d2e49967b8ef" category="list-text">에 로그인합니다<block ref="be05a730e7fbdc2cc6504fccb0d15d76" category="inline-link-rx"></block>.</block>
+  <block id="db75ad7e6f88c58f5b77ff9699190c20" category="inline-image-macro">Azure 클라우드 쉘의 스크린샷</block>
+  <block id="cb9c4e33773bbb43c0f31fb324c6397c" category="list-text">을 클릭합니다 <block ref="675928dc3c407a9d792f8097bea153a3" category="inline-image-macro-rx" type="image"></block> 를 눌러 클라우드 쉘을 열고 Bash 콘솔을 선택합니다.</block>
+  <block id="c1e10f9d2da10dd930a016278cd69bde" category="list-text">Azure 클라우드 셸에 스크립트를 업로드합니다.</block>
+  <block id="3dd3a2392b429c72b9b402e9f78a5669" category="list-text">스크립트를 실행할 권한을 할당합니다.</block>
+  <block id="d082ae86359d86afc2e67be3c976c1e7" category="paragraph">"chmod + x./scs_Azure_firewall_config.sh"를 선택합니다</block>
+  <block id="3ffb93c401d278c605ef87fdc061d339" category="list-text">스크립트를 실행합니다.</block>
+  <block id="5e944bef96e94a4fd284f8ff552cc980" category="paragraph">'./scs_azure_firewall_config.sh -fwsubid &lt;Firewall_SubscriptionID&gt; -fwname &lt;Firewall_name&gt; -fwrg &lt;Firewall_Resource_group&gt; -scssubid &lt;SnapCenter_Service_SubscriptionID&gt; -scsvnet &lt;SnapCenter_Service_VNET_name&gt; -scsssubnet &lt;SnapCenter_Service_Subnet_name&gt; -scnetservice_vnet_vnssrSnapCenter_service.svnet_cnet_svnet_svnet_cssid&lt;cnet_ssid&gt;</block>
+  <block id="3e1cdf06b6e1c94898b39731fb1984b5" category="admonition">자원 그룹을 만들지 않은 경우 스크립트는 자원 그룹을 만듭니다. 커넥터를 생성하는 동안 동일한 리소스 그룹을 사용하여 모든 SnapCenter 서비스 관련 리소스가 동일한 리소스 그룹에 있도록 할 수 있습니다.</block>
+  <block id="03ca1a8893eafac750fe33e2998cfff3" category="paragraph">* 결과 *</block>
+  <block id="4cd50d43661e755192f1183cf08fffe6" category="list-text">방화벽 규칙이 구성되었습니다.</block>
+  <block id="b9940dcbb39cb931ec7e01152c216680" category="list-text">SnapCenter 서비스에 대한 리소스 그룹이 생성됩니다.</block>
+  <block id="0cd7f89167541f4dfc3d0ddc5aba7779" category="list-text">라우트 테이블은 SnapCenter 서비스 리소스 그룹에 생성됩니다.</block>
+  <block id="bb7c2e8549d0731d851ea33dad892efe" category="list-text">라우팅 테이블 규칙이 구성됩니다.</block>
+  <block id="64cd8b6042d8110e333061975441af1e" category="list-text">라우팅 테이블이 서브넷에 연결되어 있습니다.</block>
+  <block id="ad84535a3df654cda0c08fa019d4e5b5" category="section-title">HANA 시스템에 연결</block>
+  <block id="f50bd4bb3a52b1fc096a38c3ee11de9b" category="paragraph">SnapCenter 서비스 클러스터는 HDBSQL 명령을 사용하여 사용자 네트워크의 HANA 시스템과 통신해야 합니다. SnapCenter 클러스터와 HANA 시스템 간의 통신 채널은 다음과 같은 다양한 네트워크 아키텍처를 사용하여 허용되어야 합니다.</block>
+  <block id="c1bb0462c69cfcd7397951f427c95a0c" category="list-text">커넥터 및 SnapCenter 서비스 클러스터는 HANA 시스템과 동일한 VNET에 구축됩니다</block>
+  <block id="e89972518428349c83cbd19f8fea6017" category="list-text">커넥터 및 SnapCenter 서비스 클러스터는 HANA 시스템과 마찬가지로 다른 VNET에 구축되며, 통신은 두 VNets 간의 VNET 피어링을 사용하여 설정됩니다.</block>
+  <block id="19d30c7edc0463303ff849578ac54ad2" category="list-text">커넥터와 SnapCenter 서비스 클러스터는 HANA 시스템과 다른 VNET에 구축되며, 통신은 두 VNets 사이의 VPN 게이트웨이를 사용하여 설정됩니다.</block>
+  <block id="871d60d74909245287d5217802e93005" category="section-title">보안 그룹 구성</block>
+  <block id="8596f5c99acc7cd90c6132e01869d0d2" category="paragraph">HANA 시스템에 네트워크 보안 그룹(NSG)이 구성되어 있는 경우, 사용자 저장소 키에 지정된 대로 SnapCenter 서비스 포트에서 HANA 시스템 포트로의 인바운드 통신을 허용해야 합니다.</block>
+  <block id="199db3d2ec990b3799a83fae55da6046" category="list-text">프로토콜: 모든 TCP</block>
+  <block id="d7979f0c56ae2dc86ff6934cdfa42493" category="list-text">서브넷: SnapCenter AKS 클러스터 서브넷</block>
+  <block id="5ae4d7e7a456c0cbd29ccef96456bdcf" category="list-text">용도: HDBSQL 명령을 실행합니다</block>
+  <block id="ae76e5bba1a2e4e7d2545d2770f0f970" category="paragraph">SnapCenter AKS 클러스터에서 실행되는 HANA 서비스는 SSL이 활성화된 HANA 시스템과의 SSL 통신을 지원합니다.</block>
+  <block id="3dc87d09ceccd7dcab8ae39abb6d9c10" category="summary">클라우드 관리자 UI를 사용하여 SnapCenter 서비스를 활성화합니다.</block>
+  <block id="be2ee59845a89af945b9900a0c3b1f67" category="doc">Azure NetApp Files용 SnapCenter 서비스를 활성화합니다</block>
+  <block id="3a3768e823613248feaad95ceda47f21" category="paragraph">Cloud Manager UI를 사용하여 SnapCenter 서비스를 사용하도록 설정할 수 있습니다. SnapCenter 서비스가 활성화되면 SnapCenter 서비스를 호스팅하는 Azure Kubernetes Service(AKS) 클러스터가 생성됩니다.</block>
+  <block id="21b9eb1efd8b70406b4d239438045123" category="inline-link">리소스 공급자 등록 방법</block>
+  <block id="4c2916034cfe6a8138586a68380d161c" category="list-text">Azure 구독에 "Microsoft.ContainerService" 리소스 공급자를 등록해야 합니다. 자세한 내용은 을 참조하십시오<block ref="a5340f0c3f9202a4bfd6638d23ad9a4b" category="inline-link-rx"></block>.</block>
+  <block id="b5b8e67d6a37d24ad73c89e4c7ac8c9e" category="inline-link-macro">필수 구성 요소</block>
+  <block id="f5aa07daf663d55fe2d8b5fa0c1158ee" category="list-text">이 모든 것을 확인해야 합니다 <block ref="fa07f7c80e3b9954be9b34a08d085342" category="inline-link-macro-rx"></block> 충족됩니다.</block>
+  <block id="78166ce4ccceeedfbf6aeb8682851072" category="paragraph">* 이 작업에 대한 정보 *</block>
+  <block id="22a09b9a7dfc74966da65969b2c367b5" category="paragraph">AKS 클러스터는 Connector를 생성하는 동안 선택한 동일한 리소스 그룹과 동일한 서브넷에 생성됩니다. 커넥터가 공용 IP 주소 없이 생성된 경우 AKS 클러스터는 비공개 모드로 생성됩니다.</block>
+  <block id="6c359fa681ceea28a725673484924d6b" category="paragraph">AKS 클러스터를 생성 및 관리하려면 필요한 권한이 있는 사용자가 할당한 관리 ID가 필요합니다. 사용자가 할당한 관리 ID가 생성되어 Connector VM에 할당되어야 합니다.</block>
+  <block id="729cc9d7e54c8d71f7ace34db42226de" category="list-text">Cloud Manager에 로그인합니다.</block>
+  <block id="14b5a071cf1b900de8c97da1b8f279f3" category="list-text">Cloud Manager에서 생성한 Connector를 선택합니다.</block>
+  <block id="dfa9b1ee29c2645a689f874096d73396" category="paragraph">Connector가 보호할 SAP HANA 시스템에 대한 네트워크 연결을 가지고 있는지 확인합니다.</block>
+  <block id="283f9473eb9458de0fd9adf0fab78b5b" category="list-text">모든 서비스 * &gt; * SnapCenter * &gt; * 활성화 * 를 클릭합니다.</block>
+  <block id="40827a860546af59127b7a2ff41eb4ce" category="list-text">다음 중 하나를 수행합니다.</block>
+  <block id="ae1d1de7c751935ee6ce99a819d419b5" category="list-text">Cloud Manager UI에서 커넥터를 만든 경우 역할을 만들고 할당할 수 있는 권한이 있으면 SnapCenter 서비스 설치 시 사용자가 할당한 관리 ID가 자동으로 생성됩니다.</block>
+  <block id="835dd5163f5fb3fc890b98aa6ffe6c7c" category="list-text">Azure 로그인 사용 * 을 선택합니다.</block>
+  <block id="401c69da1c246a377a45bd698a89743b" category="list-text">준비 완료 페이지에서 * 계속 * 을 클릭합니다.</block>
+  <block id="96bcfaa3a489189358b155804a699cc2" category="list-text">Azure 자격 증명을 지정합니다.</block>
+  <block id="739c3add6b56e3f81cd753c439799b73" category="admonition">Azure 로그인 계정에 충분한 권한이 있는지 확인해야 합니다. 사용 권한 및 사용 권한 할당 방법에 대한 자세한 내용은 을 참조하십시오 <block ref="4f9b67529ab7a758217700811268efd3" category="inline-xref-macro-rx"></block>.</block>
+  <block id="a7f9f10826bede906b76e11a793ae7b4" category="list-text">Azure Marketplace에서 Connector를 만들었거나 역할을 생성 및 할당할 권한이 없는 경우 아래 단계에 따라 사용자에게 할당된 관리 ID를 생성합니다.</block>
+  <block id="a331f81ba0072140f25008971dba85b6" category="list-text">Use Azure CLI script * 를 선택합니다.</block>
+  <block id="53aa3641eeadb7426fdd8e46cccc2890" category="list-text">Azure 계정에 대한 충분한 권한이 없는 경우 관리자에게 문의하십시오.</block>
+  <block id="8210452993bff6e60f44de83bd5f33b1" category="paragraph">사용 권한 및 사용 권한 할당 방법에 대한 자세한 내용은 을 참조하십시오 <block ref="4f9b67529ab7a758217700811268efd3" category="inline-xref-macro-rx"></block>.</block>
+  <block id="9d244729a97a8bd02265b2e65094db39" category="inline-link-macro">prerequisite_azure.sh</block>
+  <block id="8f312c3506d7b080031c7d0ef575198f" category="list-text">를 다운로드합니다 <block ref="9ffe7367cb8a4adc774ad11fd0691faa" category="inline-link-macro-rx"></block> 로컬 시스템에 대한 스크립트입니다.</block>
+  <block id="2f7c8d262b548b8e2c88a780efe067aa" category="paragraph">"chmod + x./선수 조건_sAzure.sh"</block>
+  <block id="fc784b0e571a669db1509478d57ebb67" category="paragraph">'./prerequisite_azure.sh -s &lt;subscription_ID&gt; -g &lt;connector_resourcegroup_name&gt; -c &lt;connector_vm_name&gt;'</block>
+  <block id="2b4cec00b067bdd9cc6219e54c5807d2" category="list-text">클러스터 구성 페이지에서 다음을 수행합니다.</block>
+  <block id="5b2162e403c24f290faaead7038f6524" category="list-text">클러스터 구성을 선택합니다.</block>
+  <block id="b5928486b41345234027e86c0adaafdf" category="list-text">High Availability * 를 선택하면 사용 가능한 영역에 작업자 노드 3개가 포함된 Azure Kubernetes Service(AKS) 클러스터가 생성됩니다.</block>
+  <block id="0e5a823d6ecc4b327d8160aaf73c84d4" category="list-text">단일 노드 * 를 선택하면 단일 노드가 있는 AKS 클러스터가 생성됩니다.</block>
+  <block id="57f52c63cf91b6d1a43ad73714de5b9d" category="list-text">Kubernetes Pod 주소 범위를 지정하십시오.</block>
+  <block id="33ec1cf7929473390c2e32c3b9ac7b45" category="paragraph">Kubernetes Pod 주소 범위가 가상 네트워크, 피어링된 가상 네트워크 및 연결된 온프레미스 네트워크의 IP 범위와 중복되지 않도록 하십시오. 또한 서비스 주소 범위 및 Docker 브리지 주소와 범위가 겹치지 않아야 합니다.</block>
+  <block id="a1ac022551c874ff0da8334e3ba7eeaf" category="list-text">Kubernetes Service 주소를 지정하십시오.</block>
+  <block id="a1fdd03364b6f7baf683cd7d60608599" category="paragraph">Kubernetes 서비스 주소 범위가 가상 네트워크의 IP 범위, 피어링된 가상 네트워크 및 연결된 온프레미스 네트워크와 겹치지 않도록 하십시오. 또한 범위가 Pod 주소 범위 및 Docker 브리지 주소와 중복되어서는 안 됩니다.</block>
+  <block id="380faeff04d1f2e081b62a6f940a4349" category="list-text">Docker 브리지 네트워크를 지정합니다.</block>
+  <block id="2d24f9b2445554ae4201ce2f216890c0" category="paragraph">Docker Bridge 주소가 가상 네트워크, 피어링된 가상 네트워크 및 연결된 사내 네트워크의 IP 범위와 중복되지 않는지 확인합니다. 또한 범위가 Pod 주소 범위 및 서비스 주소 범위와 겹치면 안 됩니다.</block>
+  <block id="cb49c5d9ce3127199979ee9d77d83c46" category="list-text">Connector가 공용 IP 없이 생성되고 VNET에서 사용자 지정 DNS 서버를 사용하는 경우 * 사용자 지정 DNS 서버 지원 * 을 선택합니다.</block>
+  <block id="8084bd1bc1db48d72b61e770f4c739ab" category="admonition">사용자 지정 DNS 서버가 호스팅되는 VNets의 전용 DNS 영역에 가상 네트워크 링크를 만들어야 합니다. 전용 DNS 영역 이름과 리소스 그룹 이름이 UI에 표시됩니다.</block>
+  <block id="18622b192aba11482b2e7bb448c9e341" category="list-text">검토 페이지에서 세부 정보를 검토하고 * 활성화 * 를 클릭합니다.</block>
+  <block id="88f6bf6f180f305019de968f8e4ed04b" category="list-text">SnapCenter 서비스를 성공적으로 활성화한 후 * 마침 * 을 클릭합니다.</block>
+  <block id="f3591f8ec2bce4141c70e25d03099af0" category="inline-image-macro">클러스터 세부 정보를 볼 수 있는 아이콘의 스크린샷</block>
+  <block id="b1d432ac0467bad7286587b69ab3bdf4" category="list-text">SnapCenter 서비스를 성공적으로 활성화하면 AKS 클러스터가 생성됩니다. 을 클릭하여 AKS 클러스터 세부 정보를 볼 수 있습니다 <block ref="0ccef70ccec4e6668bd069bc9e450b90" category="inline-image-macro-rx" type="image"></block>.</block>
+  <block id="05a60c66a7fd4fe205dc483ec105ae26" category="admonition">SnapCenter 서비스를 활성화하지 못한 경우 문제를 해결하고 * 재시도 * 를 클릭할 수 있습니다.</block>
+  <block id="0cbadb2e572556f20e7c908d946b29d0" category="list-text">사용자가 할당한 관리 ID를 만들면 사용자 지정 역할에 할당됩니다.</block>
+  <block id="c51a9cf78ee307575a6f3bd555b7121c" category="list-text">사용자가 할당한 관리 ID는 커넥터 리소스 그룹의 범위 아래 권한이 있는 사용자 지정 역할에 할당됩니다.</block>
+  <block id="ed88aa6f0446d738dc637a49b8caf9c2" category="list-text">사용자가 할당한 관리 ID는 Connector의 VNET 범위에서 아래 권한이 있는 사용자 지정 역할에 할당됩니다.</block>
+  <block id="a5638f3ad3dae0022a2003cc25ae9c89" category="list-text">방화벽에 라우팅하기 위해 서브넷에 라우팅 테이블이 구성되어 있는 경우, 사용자가 할당한 관리 ID는 라우팅 테이블의 범위에서 아래 권한이 있는 사용자 지정 역할에 할당됩니다.</block>
+  <block id="4bc6c96275f3ce20b2e5a8db5c39cb74" category="list-text">Connector가 공용 IP 없이 설치된 경우, 사용자가 할당한 관리 ID는 개인 DNS 영역의 범위에서 아래 권한이 있는 사용자 지정 역할에 할당됩니다.</block>
+  <block id="06f23eb1a1134b1c02b3e5511ca0107f" category="section-title">Azure 로그인 계정에 필요한 권한입니다</block>
+  <block id="f22722d582b39bf0aca5980b3ef8b95d" category="paragraph">Azure 로그인 계정은 사용자가 할당한 관리 ID, 필요한 역할을 만들고 ID를 커넥터 VM에 할당하는 데 사용됩니다.</block>
+  <block id="9dc3609645e42b94243c54ac097b1e77" category="admonition">로그인 계정의 자격 증명은 SnapCenter 서비스의 어느 곳에나 저장되지 않으며 API를 호출하는 데 사용되지 않습니다. 자격 증명은 UI에서만 사용됩니다.</block>
+  <block id="93c163b15cfb7ccd86bd3f8dd66ca760" category="inline-link-macro">SnapCenter_Deployment_Role1.json입니다</block>
+  <block id="0c867b8155e040c3f303496add1c3fdf" category="list-text">를 사용하여 사용자 지정 역할을 만듭니다 <block ref="2111e9e93105bc298bf796f8171372d5" category="inline-link-macro-rx"></block> 파일.</block>
+  <block id="e90d2c1e3768308d55a5ed4d8016c4c3" category="paragraph">SnapCenter_Deployment_Role1.json 파일의 &lt;Subscription_ID&gt;를 Azure 구독 ID로 바꿔야 합니다.</block>
+  <block id="1ed30b0b57384e6bef75baaf6608d5fb" category="list-text">Connector의 리소스 그룹 범위에 있는 로그인 계정에 역할을 할당합니다.</block>
+  <block id="81cd305ef2319ed6c3dd14d5dd76a921" category="inline-link-macro">SnapCenter_Deployment_Role2.json입니다</block>
+  <block id="912e8982329b63124135cef9881bd821" category="list-text">를 사용하여 사용자 지정 역할을 만듭니다 <block ref="d337ff2da621ff11490eb6f8cb0173a7" category="inline-link-macro-rx"></block> 파일.</block>
+  <block id="6611c5f39a8fae0c5e592c3cc4850846" category="paragraph">SnapCenter_Deployment_Role2.json 파일의 &lt;Subscription_ID&gt;를 Azure 구독 ID로 바꿔야 합니다.</block>
+  <block id="254d2168d6d9ce9105b32189aad036b3" category="list-text">Connector의 VNET 이상의 범위에서 로그인 계정에 역할을 할당합니다.</block>
+  <block id="a3db22cc7ee9cfa8f883484c38d89f90" category="inline-link-macro">방화벽이 구성되었습니다</block>
+  <block id="9a1ed59d7570d4de6470ea767eeb7f82" category="inline-link-macro">SnapCenter - 배포 - Role3.json</block>
+  <block id="0b8501c03d9c3136dd6a3f90d8614040" category="list-text">있는 경우 <block ref="09036d0bd433a6fa5406987241a1d942" category="inline-link-macro-rx"></block>에서 를 사용하여 사용자 지정 역할을 만듭니다 <block ref="6974f979e7898349c6b14a2fd521e98a" category="inline-link-macro-rx"></block> 파일.</block>
+  <block id="441a9f1e64f137fbeac0669186a438f6" category="paragraph">SnapCenter_Deployment_Role3.json 파일의 &lt;Subscription_ID&gt;를 Azure 구독 ID로 바꿔야 합니다.</block>
+  <block id="c188b8c4b880533d8efaca0cd06edd53" category="list-text">SnapCenter 서브넷에 연결된 라우트 테이블의 범위에서 로그인 계정에 역할을 할당합니다.</block>
+  <block id="80ace30f4a5ad9e66d33455c2949e4aa" category="summary">해당 시스템의 백업 중 하나에서 SAP HANA 시스템을 복원합니다.</block>
+  <block id="561178b3be2b611f86295fc5c91ca21c" category="doc">SAP HANA 시스템 복원</block>
+  <block id="608dee0e471fafc62982a8fc2ea89662" category="paragraph">데이터가 손실된 경우 해당 시스템의 백업 중 하나를 사용하여 SAP HANA 시스템을 복원합니다.</block>
+  <block id="c808f322e55451003355f85842325011" category="paragraph">스토리지 복구만 지원됩니다. HANA 시스템 복구가 지원되지 않으므로 복구하기 전에 SAP HANA Studio 또는 SAP HANA Cockpit을 사용하여 HANA 시스템을 복구 모드로 전환해야 합니다.</block>
+  <block id="95415a5ebf2eecc6c77c0e77e8a9034c" category="list-text">SnapCenter 서비스 페이지에서 * SAP HANA 시스템 * 을 클릭합니다.</block>
+  <block id="4a5394ba89b62cf1d84de8e76e5e7cd8" category="paragraph">SnapCenter 서비스에 추가된 시스템이 표시됩니다.</block>
+  <block id="4900f377e39a7c49e2c9d2818a37d859" category="list-text">을 클릭합니다 <block ref="7c7910c2beb8437dc7aa4b8b65a637e8" category="inline-image-macro-rx" type="image"></block> 복원하려는 시스템에 해당합니다.</block>
+  <block id="27be1f7730b5fc62f196facd94dde688" category="list-text">백업 보기 * 를 클릭합니다.</block>
+  <block id="301dd0e62597cfc47611b83ff0e5f2c3" category="list-text">Backups 섹션에서 을 클릭합니다 <block ref="7c7910c2beb8437dc7aa4b8b65a637e8" category="inline-image-macro-rx" type="image"></block> 시스템 복원에 사용할 백업에 해당합니다.</block>
+  <block id="357a35aedd0c37deb3a881df778a9bb4" category="list-text">복원 * 을 클릭합니다.</block>
+  <block id="74e99ef8198508661ded8d78a5dd22bf" category="list-text">메시지를 검토하고 * Yes, Restore * 를 선택하여 확인합니다.</block>
+  <block id="1ad18e39be8da049d574e51c3c28ee58" category="admonition">데이터베이스를 복원한 후 HANA Studio를 사용하여 SAP HANA 시스템의 시점 복구를 수행하는 경우 보존 설정에 따라 SnapCenter 서비스에서 삭제된 데이터 백업 카탈로그 항목이 복원될 수 있습니다. 복구 작업으로 인해 삭제된 데이터 백업 카탈로그 항목이 복원되면 SnapCenter 서비스에서 해당 항목을 검색 및 삭제할 수 없습니다. 이로 인해 SnapCenter 서비스가 로그 카탈로그를 제대로 청소하지 못할 수 있습니다. SnapCenter 서비스의 백업 항목을 확인하여 새로 복원되는 모든 데이터 백업 카탈로그 항목을 확인하고 해당 항목을 수동으로 삭제할 수 있습니다.</block>
+  <block id="6abf73ac39531a37ff136074cc08335d" category="inline-link">Azure NetApp Files with SnapCenter 서비스를 사용한 SAP HANA 백업 및 복구</block>
+  <block id="9b44a2676a95ba774deb4462cadadcea" category="paragraph">* 자세한 정보 찾기 *<block ref="204f2023016db26726bcdc655d834854" category="inline-link-rx"></block></block>
+  <block id="2bb2f60cb418e92215192866e9fedcff" category="summary">SAP HANA 시스템을 추가한 다음 비 데이터 볼륨을 추가합니다.</block>
+  <block id="a26976a86fc4f35537d8f64e1ac8a5b6" category="doc">SAP HANA 시스템 추가</block>
+  <block id="7c22501b82dfeecd40dc0b62dfa0aef9" category="paragraph">SAP HANA 시스템을 수동으로 추가합니다. SAP HANA 시스템의 자동 검색은 지원되지 않습니다.</block>
+  <block id="be900e29b5381e7afc1dc74e63115cd1" category="paragraph">SAP HANA 시스템을 추가하는 동안 HDB 사용자 저장소 키를 추가해야 합니다. HDB 보안 사용자 저장소 키는 SAP HANA 시스템의 연결 정보를 클라이언트에 안전하게 저장하는 데 사용되며 HDBSQL 클라이언트는 보안 사용자 저장소 키를 사용하여 SAP HANA 시스템에 연결합니다.</block>
+  <block id="7a8cd5931d731495a46bf35a669a721e" category="admonition">AKS 클러스터의 노드가 다운된 경우 SAP HANA 시스템을 추가하거나 수정할 수 없습니다.</block>
+  <block id="30b230132fd8b59f0b0d539db2200fe1" category="list-text">SnapCenter 서비스 페이지에서 * SAP HANA 시스템 * &gt; * 추가 * 를 클릭합니다.</block>
+  <block id="0c1a5b67011e14bb43bb9feaf10893f7" category="list-text">시스템 세부 정보 페이지에서 다음 작업을 수행합니다.</block>
+  <block id="0bb9528c6280f9acf1fac9a5b6232c63" category="list-text">시스템 유형을 선택합니다.</block>
+  <block id="a3df030ad26d42c5af0fcbd0e6f513d7" category="list-text">SAP HANA 시스템의 SID를 지정합니다.</block>
+  <block id="e5eb632216332c0ee2d0860b38c00bfc" category="list-text">SAP HANA 시스템 이름을 지정합니다.</block>
+  <block id="01496b35ac5dfc42639b14392d213cef" category="list-text">HDB Secure User Store Keys(HDB 보안 사용자 저장소 키) 텍스트 상자를 클릭하여 사용자 저장소 키 세부 정보를 추가합니다.</block>
+  <block id="5a64b90f778830156d86bb5352fc9022" category="paragraph">키 이름, 시스템 세부 정보, 사용자 이름 및 암호를 지정합니다.</block>
+  <block id="7dee7e783d13b6d5d415926ce0bfc306" category="list-text">추가 * 를 클릭합니다.</block>
+  <block id="f17079b947620ba46dc3350f27443987" category="admonition">다중 호스트 SAP HANA 시스템을 추가하는 경우 각 호스트에 대한 사용자 저장소 키를 추가해야 합니다.</block>
+  <block id="26983a904e0717c520032a2178795368" category="list-text">계속 * 을 클릭합니다.</block>
+  <block id="0a0f2401d7cfb7ad9085a1992acc4745" category="list-text">Storage Footprint 페이지에서 다음을 수행합니다.</block>
+  <block id="0b4d4df45dec0f187977abf3a0e77fca" category="list-text">작업 환경을 선택하고 NetApp 계정을 지정합니다.</block>
+  <block id="d253da62a1a7bf3e4d5c1adf904b607a" category="list-text">필요한 볼륨을 선택합니다.</block>
+  <block id="160c15dad3c86fc7f11c9d0f725a510f" category="list-text">스토리지 추가 * 를 클릭합니다.</block>
+  <block id="509926bc20361b8afcccdbb1d20c1d2f" category="list-text">모든 세부 정보를 검토하고 * 추가 * 를 클릭합니다.</block>
+  <block id="d3bbdbc84ea2f8d0fbf35fec60ac4a8c" category="paragraph">SnapCenter 서비스에 추가된 SAP HANA 시스템을 편집하거나 제거할 수도 있습니다. SAP HANA 시스템을 제거하면 연결된 모든 백업 및 카탈로그 항목이 삭제되고 더 이상 보호되지 않습니다.</block>
+  <block id="9ffc12f37359a324a9ddadcf88da6e4c" category="section-title">비 데이터 볼륨을 추가합니다</block>
+  <block id="327c3559bf13c35dec756b6a1d17e74c" category="paragraph">멀티 테넌트 데이터베이스 컨테이너 또는 단일 컨테이너 유형 SAP HANA 시스템을 추가한 후 HANA 시스템의 비 데이터 볼륨을 추가할 수 있습니다.</block>
+  <block id="d11788d6414bbc5e3aa7623d3003a34b" category="list-text">SnapCenter 서비스 페이지에서 SAP HANA 시스템 을 클릭합니다.</block>
+  <block id="8d6b0136f845c5e96113a3d6ca02e514" category="paragraph">SnapCenter 서비스에 추가된 모든 시스템이 표시됩니다.</block>
+  <block id="fd1b0828ea2644dbfd963d23f92aabf2" category="list-text">을 클릭합니다 <block ref="7c7910c2beb8437dc7aa4b8b65a637e8" category="inline-image-macro-rx" type="image"></block> 비데이터 볼륨을 추가할 멀티 테넌트 데이터베이스 컨테이너 또는 단일 컨테이너 유형 시스템에 해당합니다.</block>
+  <block id="97d0711d27380b8c7e7ec4d7558bb2e2" category="list-text">Add Non-Data Volumes * 를 클릭합니다.</block>
+  <block id="7dec48d8e3922bc99874eb37414ce188" category="list-text">새 스토리지 추가 * 를 클릭합니다.</block>
+  <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">법적 고지</block>
+  <block id="c59ae8d7beeb519a23478ab048af482c" category="paragraph"><block ref="c59ae8d7beeb519a23478ab048af482c" category="inline-link-macro-rx"></block></block>
+  <block id="6f2ac1cf1da8ec34232c651d4bba0149" category="paragraph"><block ref="6f2ac1cf1da8ec34232c651d4bba0149" category="inline-link-macro-rx"></block></block>
+  <block id="4940124e8487cb4ea36f1511a195cf66" category="inline-link-macro">Cloud Manager 3.9에 대한 고지 사항</block>
+  <block id="c069fcc68c5dfa73ccc99924c836cae9" category="list-text"><block ref="c069fcc68c5dfa73ccc99924c836cae9" category="inline-link-macro-rx"></block></block>
+  <block id="1243d1128e634c4bb1a584f8521df2e5" category="summary">HDBSQL 클라이언트를 설치하여 SAP HANA 데이터베이스에 대한 데이터 보호 작업을 수행합니다.</block>
+  <block id="3fd009a3fde81c4cf384e53c8112c76a" category="doc">HDBSQL 클라이언트를 설치합니다</block>
+  <block id="c912ea451a4f7fae49880a936d0e04a2" category="paragraph">SnapCenter 서비스를 활성화한 후 HDBSQL 클라이언트를 설치하여 SAP HANA 데이터베이스에 대한 데이터 보호 작업을 수행합니다. HDBSQL 클라이언트는 SAP HANA 시스템과 통신하는 데 사용됩니다.</block>
+  <block id="8b39314c97d2f82f1d8eb38fe721b81a" category="list-text">SAP 계정에서 HDB 클라이언트 소프트웨어를 다운로드합니다.</block>
+  <block id="81394bfe9c46f32774e28ff127891d18" category="paragraph">확장자가 (.sar)인 아카이브 파일입니다. 예: IMDB_CLIENT20_008_20-80002082.SAR</block>
+  <block id="93ab1484a59bf23c163c8dddd970ba6e" category="admonition">HDB 클라이언트 소프트웨어 버전은 2.4.202.1590784230 이상이어야 합니다.</block>
+  <block id="e6683e04e5e2aad2e90c7bc53272f49f" category="list-text">SAP 계정에서 최신 SAPCAR 유틸리티를 다운로드합니다. 예: _SAPCAR_1010-70006178.EXE _</block>
+  <block id="8df2d34372b9a1c556ba71348174747e" category="list-text">Cloud Manager UI에서 * Connector * 를 클릭하여 커넥터 이름을 얻습니다.</block>
+  <block id="db0b228d043019f838d3a4da414ce028" category="list-text">Virtual Machines * 를 클릭합니다.</block>
+  <block id="9266f2039cab63a3e9e09dc197f4b563" category="list-text">Cloud Manager Connector를 검색하고 Connector에 할당된 공용 IP 주소를 복사합니다.</block>
+  <block id="02a2c63e3fc5b79c3e6634b5b7b7e269" category="paragraph">커넥터에 공용 IP가 활성화되어 있지 않으면 점프 호스트를 사용해야 합니다.</block>
+  <block id="eafc1ddb7c110bad3e4f3362564aa25d" category="list-text">SAPCAR 유틸리티 및 HDB 클라이언트 아카이브 파일(.sar)을 커넥터 시스템으로 복사합니다.</block>
+  <block id="2235c621ae42fb07166e8fc3847cc4e5" category="paragraph">Connector 경로에 파일을 복사하려면 Connector를 만드는 동안 제공된 키 또는 자격 증명이 필요합니다.</block>
+  <block id="d996ec26363b1c8529f317272111a169" category="list-text">SCP&lt;SAPCAR_UTILITY&gt;&lt;usersername&gt;@&lt;ip_address&gt;:/home/&lt;username&gt;'</block>
+  <block id="beca022a26d66582997fb108a701e646" category="list-text">'sp&lt;hdb_client_archive&gt;&lt;username&gt;@&lt;ip_address&gt;:/home/&lt;username&gt;'</block>
+  <block id="6db493c1456d5dacc2d5c05c2783e95a" category="paragraph">파일이 _/home/&lt;username&gt;_(으)로 복사됩니다.</block>
+  <block id="133589c5406596afe58275e8d3d4e67f" category="list-text">ssh 자격 증명 또는 키를 사용하여 Connector VM에 로그인합니다.</block>
+  <block id="d56b90046c96d04e73e85480c2bdab13" category="list-text">Connector VM에서 다음 명령을 실행하여 HDBSQL 클라이언트를 AKS에 설치합니다.</block>
+  <block id="d913a0a7b3e1fc0c765f177302ef5a07" category="list-text">'SUDO CP/HOME/&lt;사용자 이름&gt;/&lt;SAPCAR_UTILITY&gt;/var/lib/docker/volumes/cloudmanager_snapcenter_volume/_data/'</block>
+  <block id="0d30c65867919132ae67822e84714c5f" category="list-text">'SUDO CP/HOME/&lt;사용자 이름&gt;/&lt;HDB_Client_archive&gt;/var/lib/docker/volumes/cloudmanager_snapcenter_volume/_data/'</block>
+  <block id="04e086354d30916cb5a4b4f83508bee3" category="list-text">'SUDO Docker Exec - it cloudmanager_snapcenter/bin/bash/opt/netapp/hdbclient/hdbclient.sh - -archivefile &lt;HDB_Client_archive&gt; -- archiveutil &lt;SAPCAR_utility&gt;'</block>
+  <block id="fad3dbbe9841f42de249b688f1d47a80" category="paragraph">* 자세한 정보 찾기 *</block>
+  <block id="876fbabe47f1976d5bf65b83530a5cfd" category="inline-link">SCP를 사용하여 파일을 이동하는 방법</block>
+  <block id="f0cdebd98ab24ec2a0c9fa5f621da1c7" category="paragraph"><block ref="f0cdebd98ab24ec2a0c9fa5f621da1c7" category="inline-link-rx"></block></block>
+  <block id="9192a9f7a760ae1ad87bc3d0801be2ad" category="summary">시스템 정의 또는 맞춤형 정책을 사용하여 SAP HANA 시스템의 온디맨드 백업 또는 일정 백업을 생성합니다.</block>
+  <block id="00c3a521f200f15289d4d2520914f61d" category="doc">SAP HANA 시스템 백업</block>
+  <block id="35bd15d82db654f30aca713785904042" category="paragraph">시스템 정의 또는 맞춤형 정책을 사용하여 SAP HANA 시스템의 주문형 백업을 수행하거나 백업을 예약할 수 있습니다. SnapCenter 서비스는 스냅샷 기반 백업과 파일 기반 백업을 모두 지원합니다.</block>
+  <block id="0a4a3719bc7519d1162060e0f0e08f8a" category="section-title">백업 정책을 생성합니다</block>
+  <block id="a251d47b9cd9ab372db3e3ed425d337e" category="paragraph">정책은 백업 유형, 백업 빈도, 스케줄, 보존 유형, 보존 수를 지정합니다. 및 기타 데이터 보호 작업의 특성도 함께 제공됩니다. Cloud Manager UI를 사용하여 정책을 생성할 수 있습니다.</block>
+  <block id="411ff40e8864e71d617fc988b4f37448" category="paragraph">기본적으로 스냅샷 기반 백업 작업과 파일 기반 백업 작업에 각각 하나씩 두 개의 시스템 정의 정책을 사용할 수 있습니다.</block>
+  <block id="497cdcc4d96044dee873a809034126b5" category="list-text">SnapCenter 서비스 페이지에서 * 정책 * &gt; * 추가 * 를 클릭합니다.</block>
+  <block id="9b53d8722376d76d95e16c11121c7aff" category="list-text">백업 정책 생성 페이지에서 다음 작업을 수행합니다.</block>
+  <block id="d14a88e73f059d5716e327a50ec863a3" category="list-text">정책 이름을 지정합니다.</block>
+  <block id="086639263c82bd871885aeb5fa33fee8" category="list-text">이 정책을 사용하여 생성할 백업 유형을 선택합니다.</block>
+  <block id="ba0006fc6cf3c24524212d8a22e96bee" category="list-text">백업 이름을 지정합니다.</block>
+  <block id="8e11894e22f83c26c34d6e7a59f562fa" category="paragraph">접미사 타임스탬프는 기본적으로 추가됩니다. 백업 이름에 포함되어야 하는 다른 접미사를 선택하고 접미사가 표시되는 순서를 정의할 수 있습니다.</block>
+  <block id="0fbdb70e1ea8c88151e4fb2c7b226348" category="list-text">예약된 백업의 스케줄 빈도와 시작 및 종료 시간을 지정합니다.</block>
+  <block id="dbf5a2ea304133a2405e80bab3a107cd" category="list-text">유지할 스냅샷 복사본의 수를 지정하거나 스냅샷 복사본을 보존할 날짜를 지정합니다.</block>
+  <block id="ce4aed91ed2a3f8e3ed8369bb76e9402" category="paragraph">을 클릭하여 정책을 보거나 편집하거나 삭제할 수 있습니다 <block ref="7c7910c2beb8437dc7aa4b8b65a637e8" category="inline-image-macro-rx" type="image"></block> 정책에 해당합니다.</block>
+  <block id="c91ff5b89781f9b20673d63d2fbc4481" category="section-title">필요 시 백업을 생성합니다</block>
+  <block id="07ef1c94a48a13e2c73cf7bac8561700" category="paragraph">정책을 연결하거나 정책을 연결하지 않고 SAP HANA 시스템의 주문형 백업을 생성합니다.</block>
+  <block id="705a9b11652f383ee34aefa3d0e2c869" category="list-text">을 클릭합니다 <block ref="7c7910c2beb8437dc7aa4b8b65a637e8" category="inline-image-macro-rx" type="image"></block> 보호할 시스템에 해당합니다.</block>
+  <block id="8e546c540a2eb559f025d823f0985817" category="list-text">On-Demand Backup * 을 클릭합니다.</block>
+  <block id="a69d48245ab1162d9f0f89d1d951689a" category="list-text">주문형 백업 페이지에서 다음 작업 중 하나를 수행합니다.</block>
+  <block id="d35259313a54c1b94e605937a2cdf44e" category="list-text">백업을 정책에 연결하려면 정책을 선택하고 * 백업 생성 * 을 클릭합니다.</block>
+  <block id="91f2a03316205139c26fce3578713c69" category="list-text">백업을 정책에 연결하지 않으려면 다음 작업을 수행합니다.</block>
+  <block id="39474ced92a30e1703441d25894a3685" category="list-text">Policy 필드에서 * None * 을 선택합니다.</block>
+  <block id="d9c103e9b28e2bebca1491609f830d9e" category="list-text">백업 유형을 선택합니다.</block>
+  <block id="9c390b5a1fe85e859a200219d560a583" category="paragraph">비 데이터 볼륨을 백업하는 경우 백업 유형으로 * Snapshot Based * 만 선택할 수 있습니다.</block>
+  <block id="32342343e5df757f90e1e11a59ac04e9" category="list-text">보존 기간을 지정합니다.</block>
+  <block id="3c384d2eeea22869be9b66e36dec9d6e" category="list-text">백업 생성 * 을 클릭합니다.</block>
+  <block id="73626abd0ef8681eaa400cbeb51eeb4e" category="section-title">예약된 백업을 생성합니다</block>
+  <block id="1c4e52af72de4105d44b1b12fdccbf73" category="paragraph">정책을 SAP HANA 시스템과 연결하여 예약된 백업을 생성합니다.</block>
+  <block id="fcb5607e0e0f82fe2ae26e3330c77dd0" category="list-text">보호 * 를 클릭합니다.</block>
+  <block id="d6381ef9d201b881b6c16b897755b3b0" category="list-text">SAP HANA 시스템을 보호하는 데 사용할 정책을 선택하십시오.</block>
+  <block id="1bc534d3a549cf9d28257f63406e41b1" category="summary">SnapCenter 서비스를 구축하고 데이터를 보호하는 작업</block>
+  <block id="e65fd4b36cb902004ec1a11e44a4c354" category="paragraph">SnapCenter 서비스를 시작하여 몇 가지 단계를 통해 데이터를 보호하십시오.</block>
+  <block id="63785c950a9f3cb1e82193ec1f7e49ee" category="inline-link">NetApp Cloud Central에 가입하십시오</block>
+  <block id="5970bd5da21d70901770347c11bbaaaf" category="inline-link">Cloud Manager에 로그인합니다</block>
+  <block id="ac252743de820aac9183d9f76d4bed67" category="inline-link">NetApp 계정</block>
+  <block id="448b4179e9081f9b09ecb407bfc3d375" category="paragraph">당신은 해야 한다<block ref="1f33e40b7cbc500b81a81880d0472d5d" category="inline-link-rx"></block>,<block ref="85362a42d667fef5ad89f333e6ef6863" category="inline-link-rx"></block>를 선택한 다음 를 설정합니다<block ref="e21a9fac1d28e9fb068a4b77b13a00a9" category="inline-link-rx"></block>.</block>
+  <block id="d59048f21fd887ad520398ce677be586" category="inline-link">자세한 정보</block>
+  <block id="1a1fb24e7da5a3ddceed77de5f61f530" category="paragraph">계정 관리자만 SnapCenter 서비스를 배포할 수 있습니다. 그러나 계정 관리자와 SnapCenter 관리자는 서로 다른 작업을 수행할 수 있습니다.<block ref="f16792f5e43bceae84f18b6113aacc62" category="inline-link-rx"></block></block>
+  <block id="f908c36705844b4672f06b0e10ee4838" category="paragraph">이 모든 것을 확인해야 합니다 <block ref="fa07f7c80e3b9954be9b34a08d085342" category="inline-link-macro-rx"></block> 커넥터를 생성하고 SnapCenter 서비스를 활성화하는 것이 충족됩니다.</block>
+  <block id="9ee90c6524cb5493257b2167abc94c5c" category="inline-link-macro">Azure for SnapCenter 서비스에서 커넥터를 생성합니다</block>
+  <block id="ef2af854781ce71784c836ac55ee5298" category="paragraph">당신은 해야 한다 <block ref="4d9e1737fd40621293357dd1e83461e4" category="inline-link-macro-rx"></block>.</block>
+  <block id="9d5934b77e867f1b75d620dd08a6e0f0" category="paragraph">모든 필수 구성 요소를 충족하는 커넥터가 있는 경우 이를 사용할 수 있습니다.</block>
+  <block id="3b9bc62f2f1105367e685e9c3c5d5ddb" category="paragraph">Cloud Manager에서 Azure NetApp Files 작업 환경을 생성하여 NetApp 계정, 용량 풀, 볼륨 및 스냅샷을 생성하고 관리합니다.<block ref="fc5c037f35305c25af291ecdcda29c52" category="inline-link-rx"></block></block>
+  <block id="11f76b038128e01dcdb73916098c6f21" category="inline-link-macro">SnapCenter 서비스를 활성화합니다</block>
+  <block id="9005e3b9eb71b10846c44229333b8e10" category="paragraph">당신은 해야 한다 <block ref="ce5c2405f61c2e9df01facab7b397870" category="inline-link-macro-rx"></block> Cloud Manager UI 사용 SnapCenter 서비스가 활성화되면 SnapCenter 서비스를 호스팅하는 Azure Kubernetes Service(AKS) 클러스터가 생성됩니다.</block>
+  <block id="ffb862d6ed4e03ace7edee600ef7f672" category="inline-link-macro">HDBSQL 클라이언트를 설치합니다</block>
+  <block id="b51ad42c1cb6ae5c146781dfc7106f8c" category="paragraph">당신은 해야 한다 <block ref="dfe2de5d9a6585cf74b8bd4b155b7cc7" category="inline-link-macro-rx"></block> SAP HANA 데이터베이스에서 데이터 보호 작업을 수행합니다. HDBSQL 클라이언트는 SAP HANA 시스템과 통신하는 데 사용됩니다.</block>
+  <block id="3eff3160e226ee94088d7a82b1742b31" category="inline-link-macro">SAP HANA 시스템을 추가합니다</block>
+  <block id="1a9eae721c5d6595d97e5dcf7a954512" category="paragraph">수동으로 해야 합니다 <block ref="2adc40e022beadeb98f925dbb1ddc5c7" category="inline-link-macro-rx"></block>.</block>
+  <block id="07782826fd770f3a08620e4eab9fd47f" category="inline-link-macro">SAP HANA 시스템을 백업합니다</block>
+  <block id="7ac15f47230ee764753f9724930e69bc" category="inline-link-macro">SAP HANA 시스템을 복원합니다</block>
+  <block id="61e8837b00fd47dc7a5a21fa5a795866" category="paragraph">그러면 됩니다 <block ref="4e30a3e5a68d487f5006c23de2f184dc" category="inline-link-macro-rx"></block> 시스템 정의 또는 사용자 정의 정책 사용 데이터 손실 발생 시 다음을 수행할 수 있습니다 <block ref="95aa2756e80acc49f6bc0248eab64b5a" category="inline-link-macro-rx"></block> 해당 시스템의 백업을 사용합니다.</block>
+  <block id="1b592902fdb11c82611378e3ec52d0e5" category="summary">SnapCenter 서비스 문제를 해결합니다.</block>
+  <block id="7a4e5e5bc542eae2d10e3506f839f2ae" category="doc">문제를 해결합니다</block>
+  <block id="f2988107909ad16194c70b71386ca695" category="section-title">문제: Redis Pod가 CrashLoopBackOff 상태로 고착됩니다</block>
+  <block id="ee9fbf27d140ce1532e0146065dcd21f" category="paragraph">* 설명 * 고가용성 구성의 경우 클러스터의 모든 노드가 다운된 경우 AKS 클러스터가 작동 상태로 돌아오지 않습니다. 모든 노드를 다시 시작하면 모든 Redis Pods가 CrashLoopBackOff 상태일 수 있습니다.</block>
+  <block id="2303ba437b09df11bb2d2530aab9a14e" category="paragraph">* 솔루션* 시스템을 복원하려면 다음 명령을 실행해야 합니다.</block>
+  <block id="6a0c197ad53eaaf3842eef70258f4f4a" category="list-text">커넥터에 로그인합니다.</block>
+  <block id="8ad9550e2dc33934b88363a91feab2db" category="list-text">Redis Pod를 모두 삭제합니다.</block>
+  <block id="9b1e1181fa77af9c55443c40c2859c10" category="list-text">docker exec-it cloudmanager_snapcenter-sh'입니다</block>
+  <block id="fb720cb6e88402dcec030a303a678403" category="list-text">kubbctl scale--replicas=0 STS sc-dependency-redis-node-n SnapCenter</block>
+  <block id="4519eb841982c3b3c417960eea91e49d" category="list-text">모든 Redis Pod가 삭제되었는지 확인합니다. 쿠베틀은 포드와 SnapCenter를 얻습니다</block>
+  <block id="ee9ee650321b44ac20b03a9890997106" category="list-text">Redis Pod가 삭제되지 않은 경우 다음 명령을 실행합니다.</block>
+  <block id="26252079e3bdda987e334cfd1aa1c565" category="list-text">kubctl delete pod sc-dependency-redis-node-0-n SnapCenter</block>
+  <block id="35fe5b07eaee36afcfc179c2159c525a" category="list-text">kubctl delete pod sc-dependency-redis-node-1-n SnapCenter</block>
+  <block id="5d130dac3d502f4a74a70f9daf7fe0aa" category="list-text">kubctl delete pod sc-dependency-redis-node-2-n SnapCenter</block>
+  <block id="ddd9c32f0cc1260071888b3e7b8fcd7c" category="list-text">Redis Pod를 모두 삭제한 후 'kubeck scale -- replicas = 3 STS sc-dependency-redis-node -n SnapCenter'를 실행합니다</block>
+  <block id="a144b2704d2f5c0b193bb0de485d2363" category="list-text">삭제된 포드가 모두 가동되어 실행 중인지 확인합니다. 쿠벡틀은 포드와 SnapCenter를 얻는데</block>
+  <block id="41fc35af1363342b9cf9ddc8e9a13ad9" category="section-title">문제: 클러스터 노드를 다시 시작한 후 작업이 실패합니다</block>
+  <block id="621e2561c049659415009afc8c0e2b5a" category="paragraph">* 설명 * 고가용성 구성의 경우 클러스터의 모든 노드가 다운된 경우 AKS 클러스터가 작동 상태로 돌아오지 않습니다. 모든 노드를 다시 시작하면 작업이 회색 또는 시간 초과로 인해 실패한 것으로 나타날 수 있습니다.</block>
+  <block id="4a47842ec9ee4b794f06db8307d4776a" category="paragraph">* 솔루션 * 다음 명령을 실행해야 합니다.</block>
+  <block id="999b922f1ecfac1a619dac3af5c0dce6" category="list-text">RabbitMQ statefulset(STS) 배포를 저장합니다.</block>
+  <block id="563567628edf5ecb1b41f680b1b47a86" category="list-text">"kubbtl get STS RabbitMQ-o YAML-n SnapCenter &gt; RabbitMQ_STS.YAML"</block>
+  <block id="238949b8b326f4d2c5fae1de7ef0cfb4" category="list-text">RabbitMQ Pod에 연결된 영구 볼륨(PVS)을 식별합니다. 'kubbtl get PV | grep RabbitMQ'</block>
+  <block id="3764f4d281ff7fe37d0970776a27f7dd" category="list-text">RabbitMQ Pod에 연결된 영구 볼륨 클레임(PVC)을 삭제합니다. ``kubbtl get PVC-n SnapCenter | grep RabbitMQ | awk{'print$1'} | xargs kubbtl delete PVC-n SnapCenter'</block>
+  <block id="c592bd1c6b7ed1b630e7563e447d3950" category="list-text">3단계에서 앞서 확인한 각 PVS를 삭제합니다. ``kubtl delete PV'pvname''</block>
+  <block id="db44e2317048d63dd5bd906742b9fa70" category="list-text">RabbitMQ STS를 생성합니다. 'kubectl create -f RabbitMQ_STS.YAML-n SnapCenter'</block>
+  <block id="3db98fc7ac0a63ba0bb727b9ca5eb864" category="section-title">문제: 테넌트 데이터베이스를 생성하는 동안 백업 작업이 실패합니다</block>
+  <block id="ad6ab9308a0a7ca31d68fe9cdd997f9a" category="paragraph">* Description * 필요 시 또는 예약된 백업이 시작되면 테넌트 데이터베이스를 생성하는 동안 백업 작업이 실패합니다.</block>
+  <block id="b4a0a531c0c52c12ad810b7c517a16e1" category="paragraph">* 솔루션 * 테넌트 데이터베이스 생성은 SAP HANA 시스템에 대한 유지 관리 작업입니다.</block>
+  <block id="6e301028bad33b0dd3983c7e30f9a614" category="paragraph">테넌트 데이터베이스를 생성하기 전에 SnapCenter 서비스를 사용하여 SAP HANA 시스템을 유지보수 모드로 전환해야 합니다. SAP HANA 시스템을 유지보수 모드로 전환한 후에는 작업을 시작할 수 없습니다.</block>
+  <block id="5e65789650270172a268777aa7778e17" category="paragraph">테넌트 데이터베이스를 생성한 후에는 SAP HANA 시스템을 운영 모드로 다시 전환해야 합니다.</block>
+  <block id="c4d2b59fc4d61d92b985424cf44a39cb" category="summary">Azure for SnapCenter 서비스에서 커넥터를 생성합니다.</block>
+  <block id="a266f6237722f9b5a4130ef692c55210" category="doc">Azure for SnapCenter 서비스에서 커넥터를 생성합니다</block>
+  <block id="fc41b305b8f564b87007b7d9f6ccc823" category="paragraph">Cloud Manager 기능을 사용하려면 먼저 계정 관리자가 Connector를 배포해야 합니다. Connector를 사용하면 Cloud Manager에서 퍼블릭 클라우드 환경 내의 리소스와 프로세스를 관리할 수 있습니다.</block>
+  <block id="65803824e330be5dda78189602241b9d" category="inline-link">Azure Marketplace에서 커넥터를 만듭니다</block>
+  <block id="34f79c41d25181a7b13c9385fbd7ea59" category="paragraph">기본적으로 Azure Marketplace에서 Connector를 만들 수 있습니다. 의 단계를 수행하는 동안<block ref="02cd17b9f9a29ca67113e5669fd9247e" category="inline-link-rx"></block>다음 사항을 기억해야 합니다.</block>
+  <block id="e77ff8b764d001fc5632f5914fa1efbb" category="list-text">Cloud Manager for Cloud Volumes ONTAP가 지정된 모든 곳에서 SnapCenter 서비스에도 활용할 수 있습니다.</block>
+  <block id="3407e20e2dda7ef741cae11aedbebc06" category="list-text">Cloud Manager Name의 경우 더 나은 식별을 위해 Connector VM 이름을 지정합니다. Cloud Manager UI에서 커넥터 이름으로 표시됩니다.</block>
+  <block id="4a89c5f604f86d04b1924294cbcb21d4" category="list-text">공용 IP를 사용하지 않고 커넥터를 구성했거나 방화벽을 구성한 경우 커넥터 시스템에 연결할 점프 호스트가 있어야 합니다.</block>
+  <block id="9fc74892eea31c0ba8eb5335df0eccec" category="inline-link">사용자 동의</block>
+  <block id="42b868e2104121f766618462fe94607c" category="paragraph">있는 경우<block ref="76b48a38c537fcda47ae8e3a8eb5b6b6" category="inline-link-rx"></block> Azure Active Directory에서 활성화되었거나 테넌트 관리자가 동의를 제공할 수 있는 경우 Cloud Manager UI에서 Connector를 생성할 수 있습니다.</block>
+  <block id="4784e3f9b0f7b16fd2b7e96dba490438" category="section-title">사용자 동의가 활성화되었습니다</block>
+  <block id="036a55993c4eaf06878d19dff8ddb328" category="inline-link">Cloud Manager에서 커넥터를 생성합니다</block>
+  <block id="11cf5fe8d9e595e932847c44809b0452" category="paragraph">Azure Active Directory에서 사용자 동의가 활성화된 경우<block ref="9aadc2506edf0d025dd3c0665f0cff70" category="inline-link-rx"></block>.</block>
+  <block id="6ef901b02394aca9745109e7a2528dd0" category="section-title">사용자 동의가 비활성화되었습니다</block>
+  <block id="0da4a1a8618ceded22f25810a530ebc1" category="inline-link">관리자 동의 요청</block>
+  <block id="e4ee08261df520a9645e6a5a23eaf1a8" category="list-text">Active Directory에서 관리자 동의 워크플로가 구성된 경우 다음을 수행해야 합니다<block ref="6d8cf01151ef5a360f3c449b4a270ed1" category="inline-link-rx"></block>.</block>
+  <block id="04910f034d753a027f328a34866898e3" category="list-text">관리자 동의 워크플로가 구성되어 있지 않은 경우 다음을 수행해야 합니다.</block>
+  <block id="00711dadf5df9c8a678ecdbebd530ddd" category="inline-link">테넌트 전체 관리자 동의를 부여하기 위한 URL을 구성합니다</block>
+  <block id="ba7c359b6d2c7bae9eb803cbb076d88d" category="list-text"><block ref="d6f17a03bce9849191c532c791897328" category="inline-link-rx"></block>.</block>
+  <block id="ef2fd685db59f852e94812ddf44402c6" category="admonition">ClientID를 _989efff4-9a9e-46fa-9f17-de39e15714f9_로 지정합니다. Cloud Manager 마법사에서 이름이 지정된 Cloud Manager Azure 애플리케이션 ID입니다.</block>
+  <block id="598f1da796ed62d80dddd63cb8775774" category="list-text">테넌트 관리자에게 브라우저에서 URL을 실행하고 동의하도록 요청합니다.</block>
+  <block id="3cc2e72844bf5927e62f9110eb43bd87" category="paragraph">관리자가 표시된 오류를 무시할 수 있습니다</block>
+  <block id="e7cf5a691d8b98575b52980ab32d1529" category="inline-link">Cloud Manager에서 커넥터를 생성합니다</block>
+  <block id="8ae39ac91e2944d49fd9febe7f84103c" category="list-text"><block ref="77b641a6e84a3fa8d2e9c3859683b592" category="inline-link-rx"></block>.</block>
+  <block id="1f1b6b890eecc430a090f1c146a38865" category="admonition">커넥터를 생성하는 동안 제공된 사용자 이름 및 암호 또는 키는 컴퓨터에 연결해야 합니다</block>
+  <block id="9998e542affb998a1071422d2fa357a2" category="summary">Cloud Manager 내에서 지원되는 SnapCenter 서비스는 Azure NetApp Files에 상주하는 SAP HANA 시스템을 효율적이고 애플리케이션 정합성이 보장된 정책 기반 백업 및 복원할 수 있도록 지원합니다.</block>
+  <block id="62b15c6416b971695b696987cd557ace" category="doc">SnapCenter 서비스 설명서</block>
+  <block id="3c10116b37b407ac79092a38ffb292e4" category="summary">NetApp 기술 지원으로 지원 케이스를 생성하기 전에 NetApp Support 사이트 계정을 Cloud Manager에 추가한 다음 지원을 위해 등록해야 합니다.</block>
+  <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">지원을 위해 등록하십시오</block>
+  <block id="d53e2559d6ace0e907fc57192bf286b6" category="paragraph"><block ref="d53e2559d6ace0e907fc57192bf286b6" category="inline-link-macro-rx"></block></block>
+  <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">모든 Cloud Manager 설명서</block>
+  <block id="a7aed6b9de0d7fa9719e4d634c1d806f" category="sidebar">SnapCenter 서비스 문서</block>
+  <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">릴리스 정보</block>
+  <block id="411eaaaa405899304e54dce3363a2baf" category="sidebar">빠른 시작</block>
+  <block id="fc6193376b55c5eef2823c76b83a1607" category="sidebar">SnapCenter 서비스를 사용하여 SAP HANA 시스템 보호</block>
+  <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">지식 및 지원</block>
+  <block id="e096a5e1d4ec29b8011f6c6d15b90ee2" category="sidebar">새로운 소식</block>
+  <block id="2ea7b0fee984c9c7fcabd32058eb86ac" category="sidebar">SnapCenter 서비스를 활성화합니다</block>
+  <block id="ee68e5b99222bbc29a480fcb0d1d6ee2" category="sidebar">필수 구성 요소</block>
+  <block id="94ee7072c2750da1997438a715efb7d4" category="sidebar">커넥터를 작성합니다</block>
+  <block id="676f733b0741167535adf605d514137c" category="sidebar">SAP HANA 시스템 보호</block>
+  <block id="e0e7dee929fec9739011d2377147cb1b" category="sidebar">지식 지원</block>
+  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">블로그 커뮤니티</block>
+  <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp 커뮤니티</block>
+  <block id="ff6c37cbc252e306a6b4e390ec13cbc1" category="sidebar">Cloud Central 블로그</block>
+  <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">클라우드 웨비나</block>
+</blocks>

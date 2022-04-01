@@ -1,0 +1,73 @@
+---
+sidebar: sidebar 
+permalink: reference-troubleshoot-solution-issue.html 
+keywords: troubleshoot, solution, issues, snapcenter service, SAP HANA, Redis Pods, crashloopbackoff state, backup fails, tenant database 
+summary: SnapCenter 서비스 문제를 해결합니다. 
+---
+= 문제를 해결합니다
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+
+
+== 문제: Redis Pod가 CrashLoopBackOff 상태로 고착됩니다
+
+* 설명 * 고가용성 구성의 경우 클러스터의 모든 노드가 다운된 경우 AKS 클러스터가 작동 상태로 돌아오지 않습니다. 모든 노드를 다시 시작하면 모든 Redis Pods가 CrashLoopBackOff 상태일 수 있습니다.
+
+* 솔루션* 시스템을 복원하려면 다음 명령을 실행해야 합니다.
+
+. 커넥터에 로그인합니다.
+. Redis Pod를 모두 삭제합니다.
++
+** docker exec-it cloudmanager_snapcenter-sh'입니다
+** kubbctl scale--replicas=0 STS sc-dependency-redis-node-n SnapCenter
+
+
+. 모든 Redis Pod가 삭제되었는지 확인합니다. 쿠베틀은 포드와 SnapCenter를 얻습니다
+. Redis Pod가 삭제되지 않은 경우 다음 명령을 실행합니다.
++
+** kubctl delete pod sc-dependency-redis-node-0-n SnapCenter
+** kubctl delete pod sc-dependency-redis-node-1-n SnapCenter
+** kubctl delete pod sc-dependency-redis-node-2-n SnapCenter
+
+
+. Redis Pod를 모두 삭제한 후 'kubeck scale -- replicas = 3 STS sc-dependency-redis-node -n SnapCenter'를 실행합니다
+. 삭제된 포드가 모두 가동되어 실행 중인지 확인합니다. 쿠벡틀은 포드와 SnapCenter를 얻는데
+
+
+
+
+== 문제: 클러스터 노드를 다시 시작한 후 작업이 실패합니다
+
+* 설명 * 고가용성 구성의 경우 클러스터의 모든 노드가 다운된 경우 AKS 클러스터가 작동 상태로 돌아오지 않습니다. 모든 노드를 다시 시작하면 작업이 회색 또는 시간 초과로 인해 실패한 것으로 나타날 수 있습니다.
+
+* 솔루션 * 다음 명령을 실행해야 합니다.
+
+. 커넥터에 로그인합니다.
+. RabbitMQ statefulset(STS) 배포를 저장합니다.
++
+** docker exec-it cloudmanager_snapcenter-sh'입니다
+** "kubbtl get STS RabbitMQ-o YAML-n SnapCenter > RabbitMQ_STS.YAML"
+
+
+. RabbitMQ Pod에 연결된 영구 볼륨(PVS)을 식별합니다. 'kubbtl get PV | grep RabbitMQ'
+. RabbitMQ Pod에 연결된 영구 볼륨 클레임(PVC)을 삭제합니다. ``kubbtl get PVC-n SnapCenter | grep RabbitMQ | awk{'print$1'} | xargs kubbtl delete PVC-n SnapCenter'
+. 3단계에서 앞서 확인한 각 PVS를 삭제합니다. ``kubtl delete PV'pvname''
+. RabbitMQ STS를 생성합니다. 'kubectl create -f RabbitMQ_STS.YAML-n SnapCenter'
+
+
+
+
+== 문제: 테넌트 데이터베이스를 생성하는 동안 백업 작업이 실패합니다
+
+* Description * 필요 시 또는 예약된 백업이 시작되면 테넌트 데이터베이스를 생성하는 동안 백업 작업이 실패합니다.
+
+* 솔루션 * 테넌트 데이터베이스 생성은 SAP HANA 시스템에 대한 유지 관리 작업입니다.
+
+테넌트 데이터베이스를 생성하기 전에 SnapCenter 서비스를 사용하여 SAP HANA 시스템을 유지보수 모드로 전환해야 합니다. SAP HANA 시스템을 유지보수 모드로 전환한 후에는 작업을 시작할 수 없습니다.
+
+테넌트 데이터베이스를 생성한 후에는 SAP HANA 시스템을 운영 모드로 다시 전환해야 합니다.

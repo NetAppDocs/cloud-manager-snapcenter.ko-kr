@@ -1,0 +1,36 @@
+---
+sidebar: sidebar 
+permalink: task-restore-sap-hana-systems.html 
+keywords: restore, snapcenter service, SAP HANA, backups, HANA studio, recovery, point-in-time 
+summary: 해당 시스템의 백업 중 하나에서 SAP HANA 시스템을 복원합니다. 
+---
+= SAP HANA 시스템 복원
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+데이터가 손실된 경우 해당 시스템의 백업 중 하나를 사용하여 SAP HANA 시스템을 복원합니다.
+
+스토리지 복구만 지원됩니다. HANA 시스템 복구가 지원되지 않으므로 복구하기 전에 SAP HANA Studio 또는 SAP HANA Cockpit을 사용하여 HANA 시스템을 복구 모드로 전환해야 합니다.
+
+* 단계 *
+
+. SnapCenter 서비스 페이지에서 * SAP HANA 시스템 * 을 클릭합니다.
++
+SnapCenter 서비스에 추가된 시스템이 표시됩니다.
+
+. 을 클릭합니다 image:screenshot-anf-view-system.png["세부 정보를 볼 수 있는 아이콘의 스크린샷"] 복원하려는 시스템에 해당합니다.
+. 백업 보기 * 를 클릭합니다.
+. Backups 섹션에서 을 클릭합니다 image:screenshot-anf-view-system.png["세부 정보를 볼 수 있는 아이콘의 스크린샷"] 시스템 복원에 사용할 백업에 해당합니다.
+. 복원 * 을 클릭합니다.
+. 메시지를 검토하고 * Yes, Restore * 를 선택하여 확인합니다.
+
+
+
+IMPORTANT: 데이터베이스를 복원한 후 HANA Studio를 사용하여 SAP HANA 시스템의 시점 복구를 수행하는 경우 보존 설정에 따라 SnapCenter 서비스에서 삭제된 데이터 백업 카탈로그 항목이 복원될 수 있습니다. 복구 작업으로 인해 삭제된 데이터 백업 카탈로그 항목이 복원되면 SnapCenter 서비스에서 해당 항목을 검색 및 삭제할 수 없습니다. 이로 인해 SnapCenter 서비스가 로그 카탈로그를 제대로 청소하지 못할 수 있습니다. SnapCenter 서비스의 백업 항목을 확인하여 새로 복원되는 모든 데이터 백업 카탈로그 항목을 확인하고 해당 항목을 수동으로 삭제할 수 있습니다.
+
+* 자세한 정보 찾기 *https://docs.netapp.com/us-en/netapp-solutions-sap/backup/saphana-backup-anf-overview.html["Azure NetApp Files with SnapCenter 서비스를 사용한 SAP HANA 백업 및 복구"]

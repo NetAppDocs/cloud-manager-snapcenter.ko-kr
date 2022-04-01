@@ -1,0 +1,46 @@
+---
+sidebar: sidebar 
+permalink: reference-get-started-snapcenter-service.html 
+keywords: snapcenter service, getting started, connector, HDBSQL client, SAP HANA systems, protect SAP HANA systems 
+summary: SnapCenter 서비스를 구축하고 데이터를 보호하는 작업 
+---
+= 시작하십시오
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+SnapCenter 서비스를 시작하여 몇 가지 단계를 통해 데이터를 보호하십시오.
+
+[role="quick-margin-para"]
+당신은 해야 한다 https://docs.netapp.com/us-en/cloud-manager-get-started/task-signing-up.html["NetApp Cloud Central에 가입하십시오"^], https://docs.netapp.com/us-en/cloud-manager-get-started/task-logging-in.html["Cloud Manager에 로그인합니다"^]를 선택한 다음 를 설정합니다 https://docs.netapp.com/us-en/cloud-manager-accounts/task-setting-up-cloud-central-accounts.html["NetApp 계정"^].
+
+[role="quick-margin-para"]
+계정 관리자만 SnapCenter 서비스를 배포할 수 있습니다. 그러나 계정 관리자와 SnapCenter 관리자는 서로 다른 작업을 수행할 수 있습니다. https://docs.netapp.com/us-en/cloud-manager-accounts/reference-user-roles.html["자세한 정보"^]
+
+[role="quick-margin-para"]
+이 모든 것을 확인해야 합니다 link:prerequisites-azure-connector-snapcenter-service.html["필수 구성 요소"] 커넥터를 생성하고 SnapCenter 서비스를 활성화하는 것이 충족됩니다.
+
+[role="quick-margin-para"]
+당신은 해야 한다 link:create-azure-connector-user-consent-snapcenter-service.html["Azure for SnapCenter 서비스에서 커넥터를 생성합니다"].
+
+[role="quick-margin-para"]
+모든 필수 구성 요소를 충족하는 커넥터가 있는 경우 이를 사용할 수 있습니다.
+
+[role="quick-margin-para"]
+Cloud Manager에서 Azure NetApp Files 작업 환경을 생성하여 NetApp 계정, 용량 풀, 볼륨 및 스냅샷을 생성하고 관리합니다. https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-manage-anf.html["자세한 정보"^]
+
+[role="quick-margin-para"]
+당신은 해야 한다 link:enable-snapcenter-service-azure-netapp-files.html["SnapCenter 서비스를 활성화합니다"] Cloud Manager UI 사용 SnapCenter 서비스가 활성화되면 SnapCenter 서비스를 호스팅하는 Azure Kubernetes Service(AKS) 클러스터가 생성됩니다.
+
+[role="quick-margin-para"]
+당신은 해야 한다 link:install-hdbsql-client-snapcenter-service.html["HDBSQL 클라이언트를 설치합니다"] SAP HANA 데이터베이스에서 데이터 보호 작업을 수행합니다. HDBSQL 클라이언트는 SAP HANA 시스템과 통신하는 데 사용됩니다.
+
+[role="quick-margin-para"]
+수동으로 해야 합니다 link:add-sap-hana-systems-non-data-volumes-snapcenter-service.html["SAP HANA 시스템을 추가합니다"].
+
+[role="quick-margin-para"]
+그러면 됩니다 link:create-backup-ondemand-policies-schedule-sap-hana.html["SAP HANA 시스템을 백업합니다"] 시스템 정의 또는 사용자 정의 정책 사용 데이터 손실 발생 시 다음을 수행할 수 있습니다 link:restore-sap-hana-systems.html["SAP HANA 시스템을 복원합니다"] 해당 시스템의 백업을 사용합니다.
