@@ -151,7 +151,6 @@
   <block id="9e4cfd7ef75c01c5ac965cb1ba1bac37" category="list-text">방화벽 공용 IP 주소에서 인터넷으로 트래픽을 전달합니다.</block>
   <block id="4bef0203103722e65f656f8c35646b87" category="list-text">서브넷에 라우팅 테이블을 첨부합니다.</block>
   <block id="7ebcb503cdda50b6cfafe4b188689a5c" category="inline-link">커넥터에 대한 네트워킹 요구 사항</block>
-  <block id="d9b18cee7a313ead74dd7a023666ffa9" category="paragraph">Cloud Manager Connector의 네트워킹 요구사항에 대한 자세한 내용은 를 참조하십시오<block ref="57f818e1db49e293a718988eb6d733d8" category="inline-link-rx"></block>.</block>
   <block id="ca3fae953ace3814f44551f58d2984bf" category="section-title">Azure 방화벽 구성</block>
   <block id="bd114f893a39a34dfb70d101f6cc8d27" category="paragraph">Azure 방화벽 뒤에서 SnapCenter 서비스를 활성화하려면 다음 작업을 수행해야 합니다.</block>
   <block id="d428ebb7ac02e1484781b38a799a4f99" category="paragraph">* 필요한 것 *</block>
@@ -361,9 +360,7 @@
   <block id="63785c950a9f3cb1e82193ec1f7e49ee" category="inline-link">NetApp Cloud Central에 가입하십시오</block>
   <block id="5970bd5da21d70901770347c11bbaaaf" category="inline-link">Cloud Manager에 로그인합니다</block>
   <block id="ac252743de820aac9183d9f76d4bed67" category="inline-link">NetApp 계정</block>
-  <block id="448b4179e9081f9b09ecb407bfc3d375" category="paragraph">당신은 해야 한다<block ref="1f33e40b7cbc500b81a81880d0472d5d" category="inline-link-rx"></block>,<block ref="85362a42d667fef5ad89f333e6ef6863" category="inline-link-rx"></block>를 선택한 다음 를 설정합니다<block ref="e21a9fac1d28e9fb068a4b77b13a00a9" category="inline-link-rx"></block>.</block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link">자세한 정보</block>
-  <block id="1a1fb24e7da5a3ddceed77de5f61f530" category="paragraph">계정 관리자만 SnapCenter 서비스를 배포할 수 있습니다. 그러나 계정 관리자와 SnapCenter 관리자는 서로 다른 작업을 수행할 수 있습니다.<block ref="f16792f5e43bceae84f18b6113aacc62" category="inline-link-rx"></block></block>
   <block id="f908c36705844b4672f06b0e10ee4838" category="paragraph">이 모든 것을 확인해야 합니다 <block ref="fa07f7c80e3b9954be9b34a08d085342" category="inline-link-macro-rx"></block> 커넥터를 생성하고 SnapCenter 서비스를 활성화하는 것이 충족됩니다.</block>
   <block id="9ee90c6524cb5493257b2167abc94c5c" category="inline-link-macro">Azure for SnapCenter 서비스에서 커넥터를 생성합니다</block>
   <block id="ef2af854781ce71784c836ac55ee5298" category="paragraph">당신은 해야 한다 <block ref="4d9e1737fd40621293357dd1e83461e4" category="inline-link-macro-rx"></block>.</block>
@@ -412,7 +409,6 @@
   <block id="a266f6237722f9b5a4130ef692c55210" category="doc">Azure for SnapCenter 서비스에서 커넥터를 생성합니다</block>
   <block id="fc41b305b8f564b87007b7d9f6ccc823" category="paragraph">Cloud Manager 기능을 사용하려면 먼저 계정 관리자가 Connector를 배포해야 합니다. Connector를 사용하면 Cloud Manager에서 퍼블릭 클라우드 환경 내의 리소스와 프로세스를 관리할 수 있습니다.</block>
   <block id="65803824e330be5dda78189602241b9d" category="inline-link">Azure Marketplace에서 커넥터를 만듭니다</block>
-  <block id="34f79c41d25181a7b13c9385fbd7ea59" category="paragraph">기본적으로 Azure Marketplace에서 Connector를 만들 수 있습니다. 의 단계를 수행하는 동안<block ref="02cd17b9f9a29ca67113e5669fd9247e" category="inline-link-rx"></block>다음 사항을 기억해야 합니다.</block>
   <block id="e77ff8b764d001fc5632f5914fa1efbb" category="list-text">Cloud Manager for Cloud Volumes ONTAP가 지정된 모든 곳에서 SnapCenter 서비스에도 활용할 수 있습니다.</block>
   <block id="3407e20e2dda7ef741cae11aedbebc06" category="list-text">Cloud Manager Name의 경우 더 나은 식별을 위해 Connector VM 이름을 지정합니다. Cloud Manager UI에서 커넥터 이름으로 표시됩니다.</block>
   <block id="4a89c5f604f86d04b1924294cbcb21d4" category="list-text">공용 IP를 사용하지 않고 커넥터를 구성했거나 방화벽을 구성한 경우 커넥터 시스템에 연결할 점프 호스트가 있어야 합니다.</block>
@@ -420,7 +416,6 @@
   <block id="42b868e2104121f766618462fe94607c" category="paragraph">있는 경우<block ref="76b48a38c537fcda47ae8e3a8eb5b6b6" category="inline-link-rx"></block> Azure Active Directory에서 활성화되었거나 테넌트 관리자가 동의를 제공할 수 있는 경우 Cloud Manager UI에서 Connector를 생성할 수 있습니다.</block>
   <block id="4784e3f9b0f7b16fd2b7e96dba490438" category="section-title">사용자 동의가 활성화되었습니다</block>
   <block id="036a55993c4eaf06878d19dff8ddb328" category="inline-link">Cloud Manager에서 커넥터를 생성합니다</block>
-  <block id="11cf5fe8d9e595e932847c44809b0452" category="paragraph">Azure Active Directory에서 사용자 동의가 활성화된 경우<block ref="9aadc2506edf0d025dd3c0665f0cff70" category="inline-link-rx"></block>.</block>
   <block id="6ef901b02394aca9745109e7a2528dd0" category="section-title">사용자 동의가 비활성화되었습니다</block>
   <block id="0da4a1a8618ceded22f25810a530ebc1" category="inline-link">관리자 동의 요청</block>
   <block id="e4ee08261df520a9645e6a5a23eaf1a8" category="list-text">Active Directory에서 관리자 동의 워크플로가 구성된 경우 다음을 수행해야 합니다<block ref="6d8cf01151ef5a360f3c449b4a270ed1" category="inline-link-rx"></block>.</block>
@@ -431,7 +426,6 @@
   <block id="598f1da796ed62d80dddd63cb8775774" category="list-text">테넌트 관리자에게 브라우저에서 URL을 실행하고 동의하도록 요청합니다.</block>
   <block id="3cc2e72844bf5927e62f9110eb43bd87" category="paragraph">관리자가 표시된 오류를 무시할 수 있습니다</block>
   <block id="e7cf5a691d8b98575b52980ab32d1529" category="inline-link">Cloud Manager에서 커넥터를 생성합니다</block>
-  <block id="8ae39ac91e2944d49fd9febe7f84103c" category="list-text"><block ref="77b641a6e84a3fa8d2e9c3859683b592" category="inline-link-rx"></block>.</block>
   <block id="1f1b6b890eecc430a090f1c146a38865" category="admonition">커넥터를 생성하는 동안 제공된 사용자 이름 및 암호 또는 키는 컴퓨터에 연결해야 합니다</block>
   <block id="9998e542affb998a1071422d2fa357a2" category="summary">Cloud Manager 내에서 지원되는 SnapCenter 서비스는 Azure NetApp Files에 상주하는 SAP HANA 시스템을 효율적이고 애플리케이션 정합성이 보장된 정책 기반 백업 및 복원할 수 있도록 지원합니다.</block>
   <block id="62b15c6416b971695b696987cd557ace" category="doc">SnapCenter 서비스 설명서</block>
@@ -454,4 +448,10 @@
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp 커뮤니티</block>
   <block id="ff6c37cbc252e306a6b4e390ec13cbc1" category="sidebar">Cloud Central 블로그</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">클라우드 웨비나</block>
+  <block id="9f56f8bbc28af80cd3cf3d7228017568" category="paragraph">Cloud Manager Connector의 네트워킹 요구사항에 대한 자세한 내용은 를 참조하십시오<block ref="7da03693753a0c0ef80665697b2bb493" category="inline-link-rx"></block>.</block>
+  <block id="0c79dd8db9f5b2ef65ce5b7b099a8230" category="paragraph">당신은 해야 한다<block ref="a421814eb6c01eb6ce8e83ff79157c0f" category="inline-link-rx"></block>,<block ref="47131f7a795cd1802b4efb27c1c3b1d1" category="inline-link-rx"></block>를 선택한 다음 를 설정합니다<block ref="4aa1c3f57d195559cab186a77b7b9ae0" category="inline-link-rx"></block>.</block>
+  <block id="e231ca02da01dbea5a879a5606ce215a" category="paragraph">계정 관리자만 SnapCenter 서비스를 배포할 수 있습니다. 그러나 계정 관리자와 SnapCenter 관리자는 서로 다른 작업을 수행할 수 있습니다.<block ref="8fa6d8cd701869ab47ef7e41561c184d" category="inline-link-rx"></block></block>
+  <block id="45ab6bb46fca37e62de63fe69b1001b7" category="paragraph">기본적으로 Azure Marketplace에서 Connector를 만들 수 있습니다. 의 단계를 수행하는 동안<block ref="c7df1b09d8813160eb999d0e84d790d1" category="inline-link-rx"></block>다음 사항을 기억해야 합니다.</block>
+  <block id="66927997372367201f4dc39b4aff5954" category="paragraph">Azure Active Directory에서 사용자 동의가 활성화된 경우<block ref="01fb2668fa31d38aaab027973d968923" category="inline-link-rx"></block>.</block>
+  <block id="c4f2841f3455964464167d0edd8574d4" category="list-text"><block ref="7b8983978fe4cc64f5f87a5d56ffac25" category="inline-link-rx"></block>.</block>
 </blocks>

@@ -16,10 +16,10 @@ summary: SnapCenter 서비스를 구축하고 데이터를 보호하는 작업
 SnapCenter 서비스를 시작하여 몇 가지 단계를 통해 데이터를 보호하십시오.
 
 [role="quick-margin-para"]
-당신은 해야 한다 https://docs.netapp.com/us-en/cloud-manager-get-started/task-signing-up.html["NetApp Cloud Central에 가입하십시오"^], https://docs.netapp.com/us-en/cloud-manager-get-started/task-logging-in.html["Cloud Manager에 로그인합니다"^]를 선택한 다음 를 설정합니다 https://docs.netapp.com/us-en/cloud-manager-accounts/task-setting-up-cloud-central-accounts.html["NetApp 계정"^].
+당신은 해야 한다 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-signing-up.html["NetApp Cloud Central에 가입하십시오"^], https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html["Cloud Manager에 로그인합니다"^]를 선택한 다음 를 설정합니다 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-setting-up-netapp-accounts.html["NetApp 계정"^].
 
 [role="quick-margin-para"]
-계정 관리자만 SnapCenter 서비스를 배포할 수 있습니다. 그러나 계정 관리자와 SnapCenter 관리자는 서로 다른 작업을 수행할 수 있습니다. https://docs.netapp.com/us-en/cloud-manager-accounts/reference-user-roles.html["자세한 정보"^]
+계정 관리자만 SnapCenter 서비스를 배포할 수 있습니다. 그러나 계정 관리자와 SnapCenter 관리자는 서로 다른 작업을 수행할 수 있습니다. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-user-roles.html["자세한 정보"^]
 
 [role="quick-margin-para"]
 이 모든 것을 확인해야 합니다 link:prerequisites-azure-connector-snapcenter-service.html["필수 구성 요소"] 커넥터를 생성하고 SnapCenter 서비스를 활성화하는 것이 충족됩니다.

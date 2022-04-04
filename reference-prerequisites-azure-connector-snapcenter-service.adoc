@@ -133,7 +133,7 @@ NOTE: Azure 방화벽을 사용하는 경우 스크립트를 사용하여 다음
 . 서브넷에 라우팅 테이블을 첨부합니다.
 
 
-Cloud Manager Connector의 네트워킹 요구사항에 대한 자세한 내용은 를 참조하십시오 https://docs.netapp.com/us-en/cloud-manager-connector/reference-networking-cloud-manager.html["커넥터에 대한 네트워킹 요구 사항"^].
+Cloud Manager Connector의 네트워킹 요구사항에 대한 자세한 내용은 를 참조하십시오 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-networking-cloud-manager.html["커넥터에 대한 네트워킹 요구 사항"^].
 
 
 
