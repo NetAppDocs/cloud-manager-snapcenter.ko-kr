@@ -6,6 +6,7 @@ summary: HDBSQL 클라이언트를 설치하여 SAP HANA 데이터베이스에 �
 ---
 = HDBSQL 클라이언트를 설치합니다
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

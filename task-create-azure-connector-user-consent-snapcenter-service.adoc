@@ -6,6 +6,7 @@ summary: Azure for SnapCenter 서비스에서 커넥터를 생성합니다.
 ---
 = Azure for SnapCenter 서비스에서 커넥터를 생성합니다
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

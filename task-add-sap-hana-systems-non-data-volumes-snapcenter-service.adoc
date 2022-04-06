@@ -6,6 +6,7 @@ summary: SAP HANA 시스템을 추가한 다음 비 데이터 볼륨을 추가�
 ---
 = SAP HANA 시스템 추가
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

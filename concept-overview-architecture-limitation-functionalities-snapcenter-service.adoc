@@ -6,6 +6,7 @@ summary: SnapCenter 서비스는 NetApp ® 클라우드 스토리지에서 실�
 ---
 = SnapCenter 서비스에 대해 자세히 알아보십시오
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

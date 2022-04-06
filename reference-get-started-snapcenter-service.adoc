@@ -6,6 +6,7 @@ summary: SnapCenter 서비스를 구축하고 데이터를 보호하는 작업
 ---
 = 시작하십시오
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

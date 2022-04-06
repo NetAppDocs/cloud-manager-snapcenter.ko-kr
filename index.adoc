@@ -7,6 +7,7 @@ summary: Cloud Manager 내에서 지원되는 SnapCenter 서비스는 Azure NetA
 ---
 = SnapCenter 서비스 설명서
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

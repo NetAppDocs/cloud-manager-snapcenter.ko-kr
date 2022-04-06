@@ -6,6 +6,7 @@ summary: 실행된 작업의 상태를 모니터링하고, 이메일 알림을 �
 ---
 = 운영 관리
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

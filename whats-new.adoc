@@ -6,6 +6,7 @@ summary: SnapCenter 서비스의 새로운 기능에 대해 알아보십시오.
 ---
 = SnapCenter 서비스의 새로운 기능
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

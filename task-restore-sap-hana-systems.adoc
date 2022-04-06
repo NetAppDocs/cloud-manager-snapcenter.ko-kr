@@ -6,6 +6,7 @@ summary: 해당 시스템의 백업 중 하나에서 SAP HANA 시스템을 복�
 ---
 = SAP HANA 시스템 복원
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
