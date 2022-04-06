@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: whats-new.html 
 keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes' 
-summary: service>의 새로운 기능에 대해 알아보십시오. 
+summary: SnapCenter 서비스의 새로운 기능에 대해 알아보십시오. 
 ---
 = SnapCenter 서비스의 새로운 기능
 :hardbreaks:
@@ -41,6 +41,6 @@ link:concept-overview-architecture-limitation-functionalities-snapcenter-service
 
 * Connector를 생성하고, SnapCenter 서비스를 활성화하고, SAP HANA 시스템을 추가한 다음 백업 및 복원 작업을 수행해야 합니다.
 +
-link:task-get-started-snapcenter-service.html["시작하십시오"]
+link:reference-get-started-snapcenter-service.html["시작하십시오"]
 
 

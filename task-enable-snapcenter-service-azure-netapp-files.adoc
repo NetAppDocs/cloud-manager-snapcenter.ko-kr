@@ -18,7 +18,7 @@ Cloud Manager UI를 사용하여 SnapCenter 서비스를 사용하도록 설정�
 * 필요한 것 *
 
 * Azure 구독에 "Microsoft.ContainerService" 리소스 공급자를 등록해야 합니다. 자세한 내용은 을 참조하십시오 https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/resource-providers-and-types#register-resource-provider["리소스 공급자 등록 방법"^].
-* 이 모든 것을 확인해야 합니다 link:prerequisites-azure-connector-snapcenter-service.html["필수 구성 요소"] 충족됩니다.
+* 이 모든 것을 확인해야 합니다 link:reference-prerequisites-azure-connector-snapcenter-service.html["필수 구성 요소"] 충족됩니다.
 
 
 * 이 작업에 대한 정보 *
@@ -174,7 +174,7 @@ SnapCenter_Deployment_Role1.json 파일의 <Subscription_ID>를 Azure 구독 ID�
 SnapCenter_Deployment_Role2.json 파일의 <Subscription_ID>를 Azure 구독 ID로 바꿔야 합니다.
 
 . Connector의 VNET 이상의 범위에서 로그인 계정에 역할을 할당합니다.
-. 있는 경우 link:prerequisites-azure-connector-snapcenter-service.html#firewall-configuration["방화벽이 구성되었습니다"]에서 를 사용하여 사용자 지정 역할을 만듭니다 link:media/SnapCenter-Deployment-Role3.json["SnapCenter - 배포 - Role3.json"] 파일.
+. 있는 경우 link:reference-prerequisites-azure-connector-snapcenter-service.html#firewall-configuration["방화벽이 구성되었습니다"]에서 를 사용하여 사용자 지정 역할을 만듭니다 link:media/SnapCenter-Deployment-Role3.json["SnapCenter - 배포 - Role3.json"] 파일.
 +
 SnapCenter_Deployment_Role3.json 파일의 <Subscription_ID>를 Azure 구독 ID로 바꿔야 합니다.
 

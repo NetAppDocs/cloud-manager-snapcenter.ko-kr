@@ -33,4 +33,4 @@ SnapCenter 서비스에 추가된 시스템이 표시됩니다.
 
 IMPORTANT: 데이터베이스를 복원한 후 HANA Studio를 사용하여 SAP HANA 시스템의 시점 복구를 수행하는 경우 보존 설정에 따라 SnapCenter 서비스에서 삭제된 데이터 백업 카탈로그 항목이 복원될 수 있습니다. 복구 작업으로 인해 삭제된 데이터 백업 카탈로그 항목이 복원되면 SnapCenter 서비스에서 해당 항목을 검색 및 삭제할 수 없습니다. 이로 인해 SnapCenter 서비스가 로그 카탈로그를 제대로 청소하지 못할 수 있습니다. SnapCenter 서비스의 백업 항목을 확인하여 새로 복원되는 모든 데이터 백업 카탈로그 항목을 확인하고 해당 항목을 수동으로 삭제할 수 있습니다.
 
-* 자세한 정보 찾기 *https://docs.netapp.com/us-en/netapp-solutions-sap/backup/saphana-backup-anf-overview.html["Azure NetApp Files with SnapCenter 서비스를 사용한 SAP HANA 백업 및 복구"]
+* 자세한 정보 찾기 *https://docs.netapp.com/us-en/netapp-solutions-sap/backup/saphana-backup-anf-overview.html["Azure NetApp Files with SnapCenter 서비스를 사용한 SAP HANA 백업 및 복구"^]
